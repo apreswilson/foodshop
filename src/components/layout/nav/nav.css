@@ -1,0 +1,234 @@
+:root {
+  --logo-width: 80px;
+  --searchbar-width: 35%;
+  --searchbar-height: 61px;
+  --mobile-searchbar-height: 65px;
+  --navigation-menu-width: 52%;
+  --navigation-menu-height: 90px;
+  --dropdown-width: 61px;
+  --mobile-navigation-menu-height: calc(100% - var(--mobile-searchbar-height) - var(--navigation-menu-height));
+}
+
+nav {
+  padding: 0 2.5%;
+  width: 95%;
+  top: 0;
+  box-shadow: 0px 5px 15px -2px var(--nav-menu-background-color);
+  height: var(--navigation-menu-height);
+  background-color: var(--nav-menu-background-color);
+  font-family: var(--default-font-family);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  border-radius: 10px;
+  padding: 0 1%;
+  width: var(--logo-width);
+  height: var(--logo-width);
+}
+
+nav img {
+  height: 100%;
+  width: 100%;
+}
+
+
+nav form {
+  height: 35px;
+  padding: 10px;
+  border-radius: 40px;
+  gap: 1%;
+  border: 3px solid var(--logo-color);
+  width: var(--searchbar-width);
+  display: flex;
+}
+
+nav form input {
+  width: calc(100% - 20px - 1%);
+  height: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  background-color: var(--nav-menu-background-color);
+  font-family: var(--default-font-family);
+  border: none;
+  outline: none;
+}
+
+nav form button {
+  opacity: 0.8;
+  font-size: 20px;
+  padding: 0;
+  border: 0;
+  color: rgb(255, 255, 255);
+  background: none;
+}
+
+nav form button svg {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  width: var(--navigation-menu-width);
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 120%;
+  height: 61px;
+  width: calc(100% / 5);
+  border-radius: 10px;
+  font-weight: 500;
+  gap: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul li:hover,
+nav ul li:active {
+  gap: 7.5%;
+  transition: var(--default-CSS-transition-time);
+  background-color: var(--logo-color);
+  cursor: pointer;
+}
+
+nav ul li p {
+  margin: 0;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+  nav form {
+    width: calc(var(--searchbar-width) + 35%);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .mobile-page-menu {
+    width: 100%;
+    left: 0;
+    height: var(--mobile-navigation-menu-height);
+    top: var(--navigation-menu-height);
+    background-color: var(--nav-menu-background-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+  }
+
+  .mobile-page-menu li {
+    width: 100%;
+    height: calc(100% / 5);
+    gap: 1%;
+  }
+
+  .mobile-page-menu li:hover,
+  .mobile-page-menu li:active {
+    gap: 3%;
+  }
+
+  .dropdown {
+    border-radius: 10px;
+    padding: calc(61px - 50px);
+    height: calc(var(--searchbar-height) - 22px);
+    width: calc(var(--dropdown-width) - 22px);
+    transition: var(--default-CSS-transition-time);
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .dropdown:hover,
+  .dropdown:active {
+    background-color: var(--logo-color);
+    cursor: pointer;
+  }
+
+  .dropdown div {
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .exit {
+    background-color: var(--logo-color);
+  }
+
+  .exit .bar1,
+  .exit .bar3 {
+    width: 110%;
+    margin-left: -5%;
+    transition: var(--default-CSS-transition-time);
+  }
+
+  .exit .bar2 {
+    width: 60%;
+    margin-left: 40%;
+    transition: var(--default-CSS-transition-time);
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav form {
+    width: 95%;
+    left: 0;
+    padding: 15px 2.5%;
+    border: 0;
+    border-radius: 0;
+    gap: 2%;
+    box-shadow: 0px 5px 15px -2px var(--nav-menu-background-color);
+    top: var(--navigation-menu-height);
+    background-color: var(--nav-menu-background-color);
+    position: absolute;
+  }
+
+  nav form input {
+    width: 95%;
+    border-radius: 0;
+    border-bottom: 3px solid var(--nav-menu-background-color);
+  }
+
+  nav form input:focus {
+    border-bottom: 3px solid var(--logo-color);
+    transition: var(--default-CSS-transition-time);
+  }
+
+  nav .mobile-page-menu {
+    top: calc(var(--navigation-menu-height) + var(--mobile-searchbar-height));
+  }
+}
+
+nav a:hover,
+nav a:active,
+nav ul li:hover,
+nav ul li:active,
+nav form button:hover,
+nav form button:active,
+.dropdown:hover,
+.dropdown:active {
+  cursor: pointer;
+}
