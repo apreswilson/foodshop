@@ -1,0 +1,22 @@
+:root {
+  --nav-menu-background-color: rgb(30, 30, 30);
+  --logo-color: rgb(42, 128, 0);
+  --default-font-family: Arial, Lato, Helvetica;
+  --default-CSS-transition-time: 0.2s ease-out;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-family: var(--default-font-family);
+}
+
+::ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+  font-family: var(--default-font-family);
+}
+
+body {
+  margin: 0;
+}
