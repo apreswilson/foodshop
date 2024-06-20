@@ -1,5 +1,5 @@
-import Nav from "../nav/nav";
-import Footer from "../footer/footer";
+import Nav from "./nav/nav";
+import Footer from "./footer/footer";
 
 interface Layout {
   children: React.ReactElement

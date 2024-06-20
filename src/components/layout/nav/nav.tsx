@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
   return (
     <nav aria-label="Navigation Menu">
       <a aria-label="Store Icon Link To Home Page">
-        <img src="public/store-logo.svg"></img>
+        <img src="/store-logo.svg"></img>
       </a>
       <form aria-label="Search For Products And Savings">
         <input type="text" name="search-bar" className="search" placeholder="Search" autoComplete="off"></input>
@@ -51,9 +51,9 @@ const Nav: React.FC = () => {
           <p>Login</p>
         </li>
         {/*Potentially Removing this section from navbar and only making it accessible from login*/}
-        <li aria-label="Register">
+        <li aria-label="Join / Sign Up">
           <FontAwesomeIcon icon={faUserPlus} />
-          <p>Register</p>
+          <p>Join</p>
         </li>
       </ul>
       <div className={`dropdown ${openPageNavigationMenu ? "exit" : ""}`} aria-label="Toggle Dropdown Menu" onClick={navigationMenuHandler} >

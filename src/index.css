@@ -1,8 +1,9 @@
 :root {
   --nav-menu-background-color: rgb(30, 30, 30);
-  --logo-color: rgb(42, 128, 0);
+  --logo-color: rgb(57, 172, 0);
   --default-font-family: Arial, Lato, Helvetica;
   --default-CSS-transition-time: 0.2s ease-out;
+  --footer-background-color: rgb(30, 30, 30);
 }
 
 ::placeholder {
@@ -19,4 +20,14 @@
 
 body {
   margin: 0;
+}
+
+main {
+  margin-top: var(--navigation-menu-height);
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    margin-top: calc(var(--navigation-menu-height) + var(--mobile-searchbar-height))
+  }
 }
