@@ -6,6 +6,7 @@
   --navigation-menu-width: 52%;
   --navigation-menu-height: 90px;
   --dropdown-width: 61px;
+  --medium-navigation-menu-height: calc(100% - var(--navigation-menu-height));
   --mobile-navigation-menu-height: calc(100% - var(--mobile-searchbar-height) - var(--navigation-menu-height));
 }
 
@@ -33,6 +34,10 @@ nav a {
 nav img {
   height: 100%;
   width: 100%;
+}
+
+nav a:hover {
+  filter: brightness(0) invert(1);
 }
 
 
@@ -66,6 +71,10 @@ nav form button {
   border: 0;
   color: rgb(255, 255, 255);
   background: none;
+}
+
+nav form button:hover {
+  opacity: 0.8;
 }
 
 nav form button svg {
@@ -125,7 +134,7 @@ nav ul li p {
   nav .mobile-page-menu {
     width: 100%;
     left: 0;
-    height: var(--mobile-navigation-menu-height);
+    height: var(--medium-navigation-menu-height);
     top: var(--navigation-menu-height);
     background-color: var(--nav-menu-background-color);
     display: flex;
@@ -200,6 +209,7 @@ nav ul li p {
     border: 0;
     border-radius: 0;
     gap: 2%;
+    border-top: 1px solid var(--logo-color);
     box-shadow: 0px 5px 15px -2px var(--nav-menu-background-color);
     top: var(--navigation-menu-height);
     background-color: var(--nav-menu-background-color);
@@ -218,6 +228,7 @@ nav ul li p {
   }
 
   nav .mobile-page-menu {
+    height: var(--mobile-navigation-menu-height);
     top: calc(var(--navigation-menu-height) + var(--mobile-searchbar-height));
   }
 }
