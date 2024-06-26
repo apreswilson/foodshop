@@ -11,6 +11,7 @@
 }
 
 nav {
+  z-index: 10;
   padding: 0 2.5%;
   width: 95%;
   top: 0;
@@ -39,7 +40,6 @@ nav img {
 nav a:hover {
   filter: brightness(0) invert(1);
 }
-
 
 nav form {
   height: 35px;
@@ -119,6 +119,17 @@ nav ul li p {
 
 .dropdown {
   display: none;
+}
+
+nav a:hover,
+nav a:active,
+nav ul li:hover,
+nav ul li:active,
+nav form button:hover,
+nav form button:active,
+.dropdown:hover,
+.dropdown:active {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -231,15 +242,4 @@ nav ul li p {
     height: var(--mobile-navigation-menu-height);
     top: calc(var(--navigation-menu-height) + var(--mobile-searchbar-height));
   }
-}
-
-nav a:hover,
-nav a:active,
-nav ul li:hover,
-nav ul li:active,
-nav form button:hover,
-nav form button:active,
-.dropdown:hover,
-.dropdown:active {
-  cursor: pointer;
 }

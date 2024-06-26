@@ -1,13 +1,13 @@
 :root {
   --footer-width: 100%;
-  --footer-height: 250px;
-  --footer-logo-width: 100px;
+  --footer-height: 270px;
+  --footer-logo-width: 75px;
 }
 
 footer {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.25fr 0.5fr 0.5fr;
   height: var(--footer-height);
   width: var(--footer-width);
   bottom: 0;
@@ -22,61 +22,95 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 footer a img {
   height: var(--footer-logo-width);
+  width: var(--footer-logo-width);
 }
 
 footer a p {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 0;
   color: var(--logo-color);
   font-weight: bold;
 }
 
 footer .links {
-  color: rgb(255, 255, 255);
   height: 100%;
-  padding-left: 20%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 footer .links p {
-  color: var(--logo-color);
-  margin: 5px 0;
-  width: 150px;
-  font-size: 30px;
-  border-bottom: 2px solid var(--logo-color);
+  width: 100%;
 }
 
 footer .links ul {
   height: 75%;
-  width: 25%;
-  margin: 10px 0 0 10px;
+  width: 100%;
   padding: 0;
+  margin: 0;
+  grid-template-columns: 50% 50%;
   list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  display: grid;
 }
 
 footer .links ul li {
   margin: 5px 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-footer .links ul li:hover,
-footer .social-links ul li:hover {
-  cursor: pointer;
-  opacity: 0.8;
+footer .contact-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contact-form p {
+  width: calc(250px + 20px + 4px);
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid var(--logo-color);
+  background-color: var(--footer-background-color);
+  color: white;
+  outline: none;
+}
+
+footer .contact-form textarea {
+  margin-top: 10px;
+  height: 75px;
+  resize: none;
+}
+
+footer .contact-form button {
+  margin: 10px 0 0 0;
+  height: 30px;
+  width: calc(250px + 20px + 4px);
+  /*default + padding + border*/
+  padding: 10px;
+  background-color: var(--logo-color);
+  color: white;
+  border: none;
+}
+
+footer .social-links {
+  height: 100%;
 }
 
 footer .social-links ul {
   padding: 0;
-  height: 75%;
   width: 100%;
+  margin-top: 70px;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
@@ -92,8 +126,45 @@ footer .social-links ul li {
   background-color: var(--logo-color);
 }
 
-footer .contact-form p {
+footer .links p,
+footer .contact-form p,
+footer .social-links p {
+  margin: 15px 0;
   font-size: 25px;
-  font-weight: bold;
   color: var(--logo-color);
+  font-weight: bold;
+}
+
+footer .links ul li:hover,
+footer .links ul li:active,
+footer .social-links ul li:hover,
+footer .social-links ul li:active,
+footer .contact-form button:hover,
+footer .contact-form button:active {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    height: 525px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+    height: 900px;
+  }
+
+  footer .links,
+  footer .contact-form p,
+  footer .social-links p {
+    text-align: center;
+  }
+
+  footer .social-links ul {
+    margin-top: 25px;
+  }
 }

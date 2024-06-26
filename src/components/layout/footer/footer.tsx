@@ -23,17 +23,8 @@ const Footer: React.FC = () => {
         <img src="/store-logo.svg"></img>
         <p>Food Shop</p>
       </a>
-      <div className="social-links">
-        <ul aria-label="Social Media Pages">
-          <li aria-label="Twitter / X"><FontAwesomeIcon icon={faTwitter} /></li>
-          <li aria-label="Youtube"><FontAwesomeIcon icon={faYoutube} /></li>
-          <li aria-label="Facebook"><FontAwesomeIcon icon={faFacebook} /></li>
-          <li aria-label="Linked In"><FontAwesomeIcon icon={faLinkedin} /></li>
-          <li aria-label="Instagram"><FontAwesomeIcon icon={faInstagram} /></li>
-        </ul>
-      </div>
       <div className="links">
-        <p>Pages</p>
+        <p>PAGES</p>
         <ul aria-label="Website Pages">
           <li aria-label="Shop">Shop</li>
           <li aria-label="Savings">Save</li>
@@ -45,7 +36,19 @@ const Footer: React.FC = () => {
       <form className="contact-form" aria-label="Contact Us">
         <p>CONTACT US</p>
         <input type="text" name="Email Address" placeholder="Email Address"></input>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
       </form>
+      <div className="social-links">
+        <p>SOCIALS</p>
+        <ul aria-label="Social Media Pages">
+          <li aria-label="Twitter / X"><FontAwesomeIcon icon={faTwitter} /></li>
+          <li aria-label="Youtube"><FontAwesomeIcon icon={faYoutube} /></li>
+          <li aria-label="Facebook"><FontAwesomeIcon icon={faFacebook} /></li>
+          <li aria-label="Linked In"><FontAwesomeIcon icon={faLinkedin} /></li>
+          <li aria-label="Instagram"><FontAwesomeIcon icon={faInstagram} /></li>
+        </ul>
+      </div>
     </footer>
   )
 }
