@@ -1,7 +1,6 @@
 import "./nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faSearch,
   faShop,
   faMoneyBills,
   faShoppingCart,
@@ -9,9 +8,11 @@ import {
   faUserPlus
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Nav: React.FC = () => {
 
+  const navigateToPage = useNavigate();
   //States
   const [openPageNavigationMenu, setOpenPageNavigationMenu] = useState<boolean>(false);
 
@@ -20,46 +21,40 @@ const Nav: React.FC = () => {
     openPageNavigationMenu ? setOpenPageNavigationMenu(false) : setOpenPageNavigationMenu(true);
   }
 
-
-
   return (
     <nav aria-label="Navigation Menu">
-      <a aria-label="Store Icon Link To Home Page">
-        <img src="/store-logo.svg"></img>
+      <a aria-label="Store Icon Link To Home Page" onClick={() => navigateToPage("/")}>
+        <img src="/store-logo.svg" alt="Food Shop Logo"></img>
+        <h1>Food Shop</h1>
       </a>
-      <form aria-label="Search For Products And Savings">
-        <input type="text" name="search-bar" className="search" placeholder="Search" autoComplete="off"></input>
-        <button type="submit" aria-label="Select To Submit Search">
-          <FontAwesomeIcon icon={faSearch} />
-        </button>
-      </form>
       <ul aria-label="Website Pages" className={openPageNavigationMenu ? "mobile-page-menu" : ""}>
-        <li aria-label="Catalog">
+        <li aria-label="Shop" onClick={() => navigateToPage("/shop")}>
           <FontAwesomeIcon icon={faShop} />
           <p>Shop</p>
         </li>
-        <li aria-label="Savings">
+        <li aria-label="Savings" onClick={() => navigateToPage("/save")}>
           <FontAwesomeIcon icon={faMoneyBills} />
           <p>Save</p>
         </li>
-        <li aria-label="Cart">
+        <li aria-label="Cart" onClick={() => navigateToPage("/cart")}>
           <FontAwesomeIcon icon={faShoppingCart} />
           <p>Cart</p>
+          <p className="items-in-cart">0</p>
         </li>
-        <li aria-label="Login">
+        <li aria-label="Login" onClick={() => navigateToPage("/login")}>
           <FontAwesomeIcon icon={faUser} />
           <p>Login</p>
         </li>
         {/*Potentially Removing this section from navbar and only making it accessible from login*/}
-        <li aria-label="Join / Sign Up">
+        <li aria-label="Join / Sign Up" onClick={() => navigateToPage("/signup")}>
           <FontAwesomeIcon icon={faUserPlus} />
           <p>Join</p>
         </li>
       </ul>
-      <div className={`dropdown ${openPageNavigationMenu ? "exit" : ""}`} aria-label="Toggle Dropdown Menu" onClick={navigationMenuHandler} >
-        <div className={openPageNavigationMenu ? "bar1" : ""}></div>
-        <div className={openPageNavigationMenu ? "bar2" : ""}></div>
-        <div className={openPageNavigationMenu ? "bar3" : ""}></div>
+      <div className={`dropdown ${openPageNavigationMenu ? "exit" : ""}`} aria-label="View Dropdown Menu" onClick={navigationMenuHandler} >
+        <div className={openPageNavigationMenu ? "bar1" : ""} aria-hidden="true"></div>
+        <div className={openPageNavigationMenu ? "bar2" : ""} aria-hidden="true"></div>
+        <div className={openPageNavigationMenu ? "bar3" : ""} aria-hidden="true"></div>
       </div>
     </nav>
   )

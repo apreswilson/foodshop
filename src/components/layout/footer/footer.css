@@ -5,20 +5,20 @@
 }
 
 footer {
-  display: grid;
-  align-items: center;
   grid-template-columns: 0.5fr 0.25fr 0.5fr 0.5fr;
+  bottom: 0;
   height: var(--footer-height);
   width: var(--footer-width);
-  bottom: 0;
   background-color: var(--footer-background-color);
-  position: relative;
   font-family: var(--default-font-family);
+  align-items: center;
+  display: grid;
+  position: relative;
 }
 
 footer a {
-  height: calc(var(--footer-height) - 30px);
   padding: 15px 0;
+  height: calc(var(--footer-height) - 30px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,13 +82,14 @@ footer .contact-form textarea {
   padding: 10px;
   border: 2px solid var(--logo-color);
   background-color: var(--footer-background-color);
-  color: white;
+  color: rgb(255, 255, 255);
   outline: none;
 }
 
 footer .contact-form textarea {
   margin-top: 10px;
   height: 75px;
+  font-family: var(--default-font-family);
   resize: none;
 }
 
@@ -99,7 +100,7 @@ footer .contact-form button {
   /*default + padding + border*/
   padding: 10px;
   background-color: var(--logo-color);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
 }
 
@@ -118,12 +119,12 @@ footer .social-links ul {
 
 footer .social-links ul li {
   font-size: 100%;
-  text-align: center;
   min-width: 20px;
   padding: 18px;
   border-radius: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: var(--logo-color);
+  text-align: center;
 }
 
 footer .links p,
@@ -136,11 +137,8 @@ footer .social-links p {
 }
 
 footer .links ul li:hover,
-footer .links ul li:active,
 footer .social-links ul li:hover,
-footer .social-links ul li:active,
-footer .contact-form button:hover,
-footer .contact-form button:active {
+footer .contact-form button:hover {
   cursor: pointer;
   opacity: 0.8;
 }

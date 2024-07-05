@@ -1,0 +1,79 @@
+.signup-layout {
+	min-height: calc(100vh - var(--navigation-menu-height));
+	font-family: var(--default-font-family);
+	display: flex;
+}
+
+.signup-form {
+	width: 40%;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.signup-form .logo,
+.signup-form .logo img {
+	height: 100px;
+	width: 100px;
+}
+
+.signup-form h1 {
+	font-size: 35px;
+	margin: 0;
+	color: var(--logo-color);
+}
+
+.signup-form .username,
+.signup-form .password {
+	height: 40px;
+	width: 65%;
+	gap: 15px;
+	border-radius: 10px;
+	padding: 10px;
+	outline: 2px solid var(--logo-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup-form .username svg,
+.signup-form .password svg {
+	height: 40px;
+	width: 40px;
+	color: var(--logo-color);
+}
+
+.signup-form .username input,
+.signup-form .password input {
+	width: calc(95% - 40px);
+	height: 100%;
+	font-size: 1.25rem;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.signup-form button {
+	padding: 20px;
+	font-size: 1.5rem;
+	width: calc(80% - 20px - 15px);
+	color: rgb(255, 255, 255);
+	background-color: var(--logo-color);
+	border: none;
+}
+
+.signup-form button:hover,
+.signup-form button:active {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.signup-layout .signup-form {
+		width: 60%;
+	}
+}

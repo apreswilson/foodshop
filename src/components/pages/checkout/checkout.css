@@ -1,0 +1,129 @@
+.checkout-layout {
+  width: 60%;
+  margin: calc(var(--navigation-menu-height) + 50px) auto 50px auto;
+  font-family: var(--default-font-family);
+}
+
+
+.checkout-layout .checkout-form h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--logo-color);
+}
+
+.checkout-form hr {
+  margin: 50px 0;
+}
+
+.checkout-form .personal-information div input,
+.checkout-form .banking-information div input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  outline: 2px solid var(--logo-color);
+  border: none;
+}
+
+.personal-information .firstname,
+.personal-information .lastname,
+.personal-information .city {
+  width: 300px;
+}
+
+.personal-information .email,
+.banking-information .holder-name {
+  width: 350px;
+}
+
+.personal-information .row-1,
+.personal-information .row-2,
+.personal-information .row-3,
+.banking-information .row-1 {
+  display: flex;
+  gap: 15px;
+}
+
+.personal-information .address,
+.banking-information .card-number {
+  width: 500px;
+}
+
+.personal-information .apt {
+  width: 200px;
+}
+
+.personal-information .state {
+  width: 100px;
+}
+
+.personal-information .zip {
+  width: 150px;
+}
+
+.banking-information .expire,
+.banking-information .cvv {
+  width: 100px;
+}
+
+.order-summary p {
+  font-size: 1.75rem;
+}
+
+.order-summary button {
+  padding: 25px;
+  font-size: 1.75rem;
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--logo-color);
+  border: none;
+  color: white;
+}
+
+.order-summary button:hover,
+.order-summary button:active {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .checkout-layout {
+    width: 80%;
+  }
+
+  .personal-information .address,
+  .banking-information .card-number {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .row-1,
+  .row-2,
+  .row-3 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .personal-information .email,
+  .personal-information .firstname,
+  .personal-information .lastname,
+  .personal-information .address,
+  .personal-information .apt,
+  .personal-information .city,
+  .personal-information .state,
+  .personal-information .zip,
+  .banking-information .holder-name,
+  .banking-information .card-number,
+  .banking-information .expire,
+  .banking-information .cvv {
+    width: 100%;
+  }
+
+  .order-summary button {
+    width: 100%;
+  }
+}

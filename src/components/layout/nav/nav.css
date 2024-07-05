@@ -1,13 +1,11 @@
 :root {
   --logo-width: 80px;
-  --searchbar-width: 35%;
-  --searchbar-height: 61px;
   --mobile-searchbar-height: 65px;
-  --navigation-menu-width: 52%;
+  --navigation-menu-width: 70%;
   --navigation-menu-height: 90px;
-  --dropdown-width: 61px;
+  --dropdown-width: 45px;
   --medium-navigation-menu-height: calc(100% - var(--navigation-menu-height));
-  --mobile-navigation-menu-height: calc(100% - var(--mobile-searchbar-height) - var(--navigation-menu-height));
+  --mobile-navigation-menu-height: calc(100% - var(--navigation-menu-height));
 }
 
 nav {
@@ -21,65 +19,29 @@ nav {
   font-family: var(--default-font-family);
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 nav a {
   border-radius: 10px;
   padding: 0 1%;
-  width: var(--logo-width);
+  width: 30%;
   height: var(--logo-width);
-}
-
-nav img {
-  height: 100%;
-  width: 100%;
-}
-
-nav a:hover {
-  filter: brightness(0) invert(1);
-}
-
-nav form {
-  height: 35px;
-  padding: 10px;
-  border-radius: 40px;
-  gap: 1%;
-  border: 3px solid var(--logo-color);
-  width: var(--searchbar-width);
+  align-items: center;
   display: flex;
+  justify-content: center;
 }
 
-nav form input {
-  width: calc(100% - 20px - 1%);
-  height: 100%;
-  font-size: 20px;
-  border-radius: 10px;
-  padding: 0;
-  color: rgb(255, 255, 255);
-  background-color: var(--nav-menu-background-color);
-  font-family: var(--default-font-family);
-  border: none;
-  outline: none;
+nav a img {
+  margin-right: 15px;
+  width: var(--logo-width);
 }
 
-nav form button {
-  opacity: 0.8;
-  font-size: 20px;
-  padding: 0;
-  border: 0;
-  color: rgb(255, 255, 255);
-  background: none;
-}
-
-nav form button:hover {
-  opacity: 0.8;
-}
-
-nav form button svg {
-  width: 100%;
-  height: 100%;
+nav a h1 {
+  color: var(--logo-color);
+  font-size: 2rem;
+  margin: 0;
 }
 
 nav ul {
@@ -105,16 +67,27 @@ nav ul li {
   text-align: center;
 }
 
-nav ul li:hover,
-nav ul li:active {
+nav ul li:hover {
   gap: 7.5%;
   transition: var(--default-CSS-transition-time);
   background-color: var(--logo-color);
-  cursor: pointer;
 }
 
 nav ul li p {
   margin: 0;
+}
+
+.items-in-cart {
+  text-align: center;
+  margin: 0;
+  padding: 2px;
+  font-size: 20px;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: var(--logo-color);
+  position: relative;
 }
 
 .dropdown {
@@ -122,17 +95,13 @@ nav ul li p {
 }
 
 nav a:hover,
-nav a:active,
 nav ul li:hover,
-nav ul li:active,
 nav form button:hover,
-nav form button:active,
-.dropdown:hover,
-.dropdown:active {
+.dropdown:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
   nav form {
     width: calc(var(--searchbar-width) + 35%);
@@ -167,8 +136,8 @@ nav form button:active,
   .dropdown {
     border-radius: 10px;
     padding: calc(61px - 50px);
-    height: calc(var(--searchbar-height) - 22px);
-    width: calc(var(--dropdown-width) - 22px);
+    height: 40px;
+    width: calc(var(--dropdown-width));
     transition: var(--default-CSS-transition-time);
     display: block;
     display: flex;
@@ -213,33 +182,12 @@ nav form button:active,
     justify-content: space-between;
   }
 
-  nav form {
-    width: 95%;
-    left: 0;
-    padding: 15px 2.5%;
-    border: 0;
-    border-radius: 0;
-    gap: 2%;
-    border-top: 1px solid var(--logo-color);
-    box-shadow: 0px 5px 15px -2px var(--nav-menu-background-color);
-    top: var(--navigation-menu-height);
-    background-color: var(--nav-menu-background-color);
-    position: absolute;
-  }
-
-  nav form input {
-    width: 95%;
-    border-radius: 0;
-    border-bottom: 3px solid var(--nav-menu-background-color);
-  }
-
-  nav form input:focus {
-    border-bottom: 3px solid var(--logo-color);
-    transition: var(--default-CSS-transition-time);
+  nav a {
+    width: 85%;
   }
 
   nav .mobile-page-menu {
     height: var(--mobile-navigation-menu-height);
-    top: calc(var(--navigation-menu-height) + var(--mobile-searchbar-height));
+    top: calc(var(--navigation-menu-height));
   }
 }

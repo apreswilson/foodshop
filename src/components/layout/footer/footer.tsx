@@ -1,4 +1,3 @@
-import "./footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTwitter,
@@ -7,25 +6,18 @@ import {
   faLinkedin,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-/*
-What to put in footer:
-Smaller version of navigation menu
-Picture of logo
-Text underneath logo saying food shop
-Social media links with icons
-Maybe a contact form?
-*/
+import "./footer.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer aria-label="Footer">
       <a aria-label="Store Icon Link To Home Page">
-        <img src="/store-logo.svg"></img>
+        <img src="/store-logo.svg" alt="Food Shop Logo"></img>
         <p>Food Shop</p>
       </a>
-      <div className="links">
+      <div className="links" aria-label="Website Pages">
         <p>PAGES</p>
-        <ul aria-label="Website Pages">
+        <ul>
           <li aria-label="Shop">Shop</li>
           <li aria-label="Savings">Save</li>
           <li aria-label="Cart">Cart</li>
@@ -41,7 +33,7 @@ const Footer: React.FC = () => {
       </form>
       <div className="social-links">
         <p>SOCIALS</p>
-        <ul aria-label="Social Media Pages">
+        <ul aria-label="Social Media Links">
           <li aria-label="Twitter / X"><FontAwesomeIcon icon={faTwitter} /></li>
           <li aria-label="Youtube"><FontAwesomeIcon icon={faYoutube} /></li>
           <li aria-label="Facebook"><FontAwesomeIcon icon={faFacebook} /></li>
