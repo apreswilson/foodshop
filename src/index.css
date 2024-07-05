@@ -1,29 +1,20 @@
 :root {
   --nav-menu-background-color: rgb(30, 30, 30);
-  --logo-color: rgb(57, 172, 0);
-  --default-font-family: Arial, Lato, Helvetica;
-  --default-CSS-transition-time: 0.2s ease-out;
+  --logo-color: rgb(55, 165, 0);
   --footer-background-color: rgb(30, 30, 30);
-}
-
-::placeholder {
-  color: white;
-  opacity: 0.8;
-  font-family: var(--default-font-family);
-}
-
-::ms-input-placeholder {
-  color: white;
-  opacity: 0.8;
-  font-family: var(--default-font-family);
+  --body-background-color: rgb(250, 250, 250);
+  --default-CSS-transition-time: 0.2s ease-out;
+  --default-font-family: Arial, Lato, Helvetica;
 }
 
 body {
   margin: 0;
+  background-color: var(--body-background-color);
 }
 
 main {
   margin-top: var(--navigation-menu-height);
+  background-color: var(--body-background-color);
 }
 
 @media screen and (max-width: 575px) {

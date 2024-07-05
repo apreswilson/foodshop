@@ -1,0 +1,193 @@
+.login-layout {
+  grid-template-columns: 40% 60%;
+  min-height: calc(100dvh - var(--navigation-menu-height));
+  font-family: var(--default-font-family);
+  display: grid;
+}
+
+.login-layout .left-side h1 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.login-layout .left-side .logo {
+  height: 100px;
+  width: 100px;
+  margin: 120px auto 75px auto;
+}
+
+.login-layout .left-side .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-layout .left-side .login-form {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-layout .left-side .login-form h1 {
+  color: var(--logo-color);
+  text-align: center;
+}
+
+.login-layout .left-side .login-form svg {
+  color: var(--logo-color);
+}
+
+.login-layout .left-side .login-form .username,
+.login-layout .left-side .login-form .password {
+  height: 40px;
+  width: 65%;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: 2px solid var(--logo-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-layout .left-side .login-form .username svg,
+.login-layout .left-side .login-form .password svg {
+  height: 40px;
+  width: 40px;
+}
+
+
+.login-layout .left-side .login-form .username input,
+.login-layout .left-side .login-form .password input {
+  width: calc(95% - 40px);
+  height: 100%;
+  font-size: 1.25rem;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.login-layout .left-side .login-form button {
+  padding: 20px;
+  font-size: 1.5rem;
+  width: calc(80% - 20px);
+  color: rgb(255, 255, 255);
+  background-color: var(--logo-color);
+  border: none;
+}
+
+.login-layout .right-side {
+  color: rgb(255, 255, 255);
+  border-radius: 50px 0 0 50px;
+  background-color: var(--logo-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-layout .right-side .icons {
+  width: 25%;
+  height: 20%;
+  grid-template-columns: 50% 50%;
+  font-size: 60px;
+  display: grid;
+}
+
+.login-layout .right-side .icons svg {
+  margin: auto;
+}
+
+.login-layout .right-side .text {
+  text-align: center;
+}
+
+.login-layout .right-side .text h1 {
+  font-size: 40px;
+}
+
+.login-layout .right-side .text p {
+  font-size: 25px;
+}
+
+.login-layout .right-side .text p:nth-child(3) {
+  margin-top: 100px;
+}
+
+.login-layout .right-side .sign-up {
+  width: 50%;
+  gap: 5%;
+  font-size: 30px;
+  background-color: var(--logo-color);
+  transition: var(--default-CSS-transition-time);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-layout .right-side .sign-up:hover {
+  gap: 7%;
+}
+
+.login-layout .left-side .login-form button:hover,
+.login-layout .left-side .login-form button:active {
+  opacity: 0.8;
+}
+
+
+.login-layout .left-side .login-form button:hover,
+.login-layout .left-side .login-form button:active,
+.login-layout .right-side .sign-up:hover,
+.login-layout .right-side .sign-up:active {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .login-layout {
+    grid-template-columns: 100%;
+  }
+
+  .login-layout .left-side .logo {
+    margin-top: 30px;
+  }
+
+  .login-layout .left-side .login-form {
+    width: 65%;
+  }
+
+  .login-layout .left-side .login-form .username,
+  .login-layout .left-side .login-form .password {
+    width: calc(100% - 40px - 15px);
+  }
+
+  .login-layout .left-side .login-form button {
+    width: calc(100% - 20px);
+  }
+
+  .login-layout .right-side {
+    padding-top: 50px;
+    margin: 50px 0 0 0;
+    border-radius: 0;
+    height: auto;
+  }
+
+  .login-layout .right-side .icons {
+    height: 200px;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .login-layout .left-side .login-form {
+    width: 85%;
+  }
+
+  .login-layout .right-side .icons {
+    width: 60%;
+  }
+}
