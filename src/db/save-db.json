@@ -1,0 +1,270 @@
+{
+  "Dry-Grocery": [
+    {
+      "Saving": "50% Off Any Crackers",
+      "Item": "Crackers",
+      "Type": "Percentage",
+      "Amount": 0.5,
+      "url": "https://static.vecteezy.com/system/resources/previews/012/096/831/original/crackers-isolated-on-transparent-background-file-png.png"
+    },
+    {
+      "Saving": "$2.00 off Canned Tuna",
+      "Item": "Canned Tuna",
+      "Type": "Amount",
+      "Amount": 2.00,
+      "url": "https://png.pngtree.com/png-clipart/20230814/original/pngtree-tuna-in-aluminum-can-ingredient-fish-canned-food-vector-picture-image_10632375.png"
+    },
+    {
+      "Saving": "50 cents off Pasta",
+      "Item": "Pasta",
+      "Type": "Amount",
+      "Amount": 0.5,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/297/786/original/spaghetti-with-tomato-sauce-and-basil-in-a-plate-isolated-on-white-transparent-background-ai-generate-png.png"
+    },
+    {
+      "Saving": "10% Off Rice",
+      "Item": "Rice",
+      "Type": "Percentage",
+      "Amount": 0.10,
+      "url": "https://static.vecteezy.com/system/resources/previews/028/086/751/original/bowl-of-rice-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+    },
+    {
+      "Saving": "$2.00 off Canned Beans",
+      "Item": "Canned Beans",
+      "Type": "Amount",
+      "Amount": 2.00,
+      "url": "https://static.vecteezy.com/system/resources/previews/035/913/435/original/ai-generated-open-bean-cans-full-of-beans-isolated-on-transparent-background-ai-png.png"
+    },
+    {
+      "Saving": "30% Off Granola Bars",
+      "Item": "Granola Bars",
+      "Type": "Percentage",
+      "Amount": 0.30,
+      "url": "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-healthy-granola-bar-muesli-or-cereal-bar-isolated-on-png-image_11923137.png"
+    }
+  ],
+  "Produce": [
+    {
+      "Saving": "20% Off Any Apple",
+      "Item": "Apple",
+      "Type": "Percentage",
+      "Amount": 0.20,
+      "url": "https://pngimg.com/d/apple_PNG12439.png"
+    },
+    {
+      "Saving": "$0.10 off Any Banana",
+      "Item": "Banana",
+      "Type": "Amount",
+      "Amount": 0.10,
+      "url": "https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png"
+    },
+    {
+      "Saving": "15% Off Any Carrot",
+      "Item": "Carrot",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/254/829/original/carrot-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+    },
+    {
+      "Saving": "$0.50 off Any Broccoli",
+      "Item": "Broccoli",
+      "Type": "Amount",
+      "Amount": 0.50,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/216/070/original/broccoli-broccoli-broccoli-transparent-background-ai-generated-free-png.png"
+    },
+    {
+      "Saving": "30% Off Any Grapes",
+      "Item": "Grapes",
+      "Type": "Percentage",
+      "Amount": 0.30,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/125/716/original/grapes-isolated-on-transparent-background-grape-clip-art-generative-ai-png.png"
+    }
+  ],
+  "Meat": [
+    {
+      "Saving": "10% Off Any Chicken Breast",
+      "Item": "Chicken Breast",
+      "Type": "Percentage",
+      "Amount": 0.10,
+      "url": "https://static.vecteezy.com/system/resources/previews/012/011/574/original/fresh-chicken-breast-cut-out-transparent-background-png.png"
+    },
+    {
+      "Saving": "$1.00 off Any Ground Beef",
+      "Item": "Ground Beef",
+      "Type": "Amount",
+      "Amount": 1.00,
+      "url": "https://png.pngtree.com/png-vector/20231003/ourmid/pngtree-ground-beef-meat-red-png-image_10138029.png"
+    },
+    {
+      "Saving": "15% Off Any Pork Chops",
+      "Item": "Pork Chops",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://img.pikbest.com/png-images/20240514/grilled-pork-chop-highly-detailed-isolated-on-transparent-background-png-_10563238.png!sw800"
+    }
+  ],
+  "Seafood": [
+    {
+      "Saving": "$2.00 off Any Salmon Fillet",
+      "Item": "Salmon Fillet",
+      "Type": "Amount",
+      "Amount": 2.00,
+      "url": "https://static.vecteezy.com/system/resources/previews/021/515/879/original/sliced-raw-salmon-fillet-on-transparent-background-file-png.png"
+    }
+  ],
+  "Drinks": [
+    {
+      "Saving": "20% Off Any Orange Juice",
+      "Item": "Orange Juice",
+      "Type": "Percentage",
+      "Amount": 0.20,
+      "url": "https://static.vecteezy.com/system/resources/previews/024/850/756/original/fresh-orange-juice-with-fruits-transparent-background-png.png"
+    },
+    {
+      "Saving": "$1.00 off Apple Juice",
+      "Item": "Apple Juice",
+      "Type": "Amount",
+      "Amount": 1.00,
+      "url": "https://pngimg.com/d/juice_PNG7185.png"
+    },
+    {
+      "Saving": "15% Off Any Sparkling Water",
+      "Item": "Sparkling Water",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://res.cloudinary.com/hksqkdlah/image/upload/SIL_S-Pellegrino_Sparkling-Natural-Mineral-Water_o5hrob.png"
+    },
+    {
+      "Saving": "$0.50 off Lemonade",
+      "Item": "Lemonade",
+      "Type": "Amount",
+      "Amount": 0.50,
+      "url": "https://i.pinimg.com/originals/5d/23/65/5d23652f2d457cc1c64314099a413af0.png"
+    },
+    {
+      "Saving": "25% Off Any Energy Drink",
+      "Item": "Energy Drink",
+      "Type": "Percentage",
+      "Amount": 0.25,
+      "url": "https://pngfre.com/wp-content/uploads/monster-energy-drink-poster.png"
+    },
+    {
+      "Saving": "$0.75 off Ginger Ale",
+      "Item": "Ginger Ale",
+      "Type": "Amount",
+      "Amount": 0.75,
+      "url": "https://www.billsdist.com/images/products/CanadaDryGingerAle.png"
+    },
+    {
+      "Saving": "10% Off Any Coffee",
+      "Item": "Coffee",
+      "Type": "Percentage",
+      "Amount": 0.10,
+      "url": "https://static.vecteezy.com/system/resources/previews/030/808/505/original/coffee-cup-no-background-png.png"
+    },
+    {
+      "Saving": "$0.50 off Grape Juice",
+      "Item": "Grape Juice",
+      "Type": "Amount",
+      "Amount": 0.50,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/145/797/original/grapes-juice-drink-perfect-for-drink-catalog-ai-generated-png.png"
+    },
+    {
+      "Saving": "30% Off Any Herbal Tea",
+      "Item": "Herbal Tea",
+      "Type": "Percentage",
+      "Amount": 0.30,
+      "url": "https://pngimg.com/d/tea_PNG16920.png"
+    },
+    {
+      "Saving": "$1.00 off Matcha Latte",
+      "Item": "Matcha Latte",
+      "Type": "Amount",
+      "Amount": 1.00,
+      "url": "https://static.vecteezy.com/system/resources/previews/033/157/065/original/hot-matcha-green-tea-latte-art-foam-isolated-on-transparent-background-ai-generated-png.png"
+    }
+  ],
+  "Pharmacy": [
+    {
+      "Saving": "10% Off Any Aspirin",
+      "Item": "Aspirin",
+      "Type": "Percentage",
+      "Amount": 0.10,
+      "url": "https://www.aspirin.ca/sites/g/files/vrxlpx30151/files/2021-06/Aspirin-Regular-extra-strength-100ct-carton.png"
+    },
+    {
+      "Saving": "$0.50 off Bandages",
+      "Item": "Bandages",
+      "Type": "Amount",
+      "Amount": 0.50,
+      "url": "https://pngimg.com/uploads/bandage/bandage_PNG26.png"
+    },
+    {
+      "Saving": "15% Off Any Cold Medicine",
+      "Item": "Cold Medicine",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://png.pngtree.com/png-clipart/20210309/original/pngtree-a-small-pile-of-cold-medicine-png-image_5830972.jpg"
+    },
+    {
+      "Saving": "20% Off Any Multivitamins",
+      "Item": "Multivitamins",
+      "Type": "Percentage",
+      "Amount": 0.20,
+      "url": "https://pngimg.com/d/vitamins_PNG61.png"
+    },
+    {
+      "Saving": "$0.75 off Hand Sanitizer",
+      "Item": "Hand Sanitizer",
+      "Type": "Amount",
+      "Amount": 0.75,
+      "url": "https://www.pngall.com/wp-content/uploads/5/Hand-Sanitizer-PNG-Free-Download.png"
+    },
+    {
+      "Saving": "25% Off Any Sunscreen",
+      "Item": "Sunscreen",
+      "Type": "Percentage",
+      "Amount": 0.25,
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/019/786/915/small_2x/sunscreen-lotion-protects-skin-from-the-sun-during-summer-png.png"
+    }
+  ],
+  "Bakery": [
+    {
+      "Saving": "15% Off Any Baguette",
+      "Item": "Baguette",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://pngimg.com/d/baguette_PNG20.png"
+    },
+    {
+      "Saving": "$0.50 off Croissant",
+      "Item": "Croissant",
+      "Type": "Amount",
+      "Amount": 0.50,
+      "url": "https://pngimg.com/d/croissant_PNG46660.png"
+    }
+  ],
+  "Deli": [
+    {
+      "Saving": "10% Off Roast Beef",
+      "Item": "Roast Beef",
+      "Type": "Percentage",
+      "Amount": 0.10,
+      "url": "https://png.pngtree.com/png-clipart/20230622/ourmid/pngtree-smoked-roast-beef-png-image_7125532.png"
+    },
+    {
+      "Saving": "$1.00 off Provolone Cheese",
+      "Item": "Provolone Cheese",
+      "Type": "Amount",
+      "Amount": 1.00,
+      "url": "https://png.pngtree.com/png-vector/20231004/ourmid/pngtree-italian-cheese-provolone-png-image_10068026.png"
+    },
+    {
+      "Saving": "15% Off Tuna Salad",
+      "Item": "Tuna Salad",
+      "Type": "Percentage",
+      "Amount": 0.15,
+      "url": "https://freepngimg.com/save/36738-tuna-salad/1884x1285"
+    }
+  ]
+}

@@ -69,6 +69,7 @@
   font-size: 1.5rem;
   outline: 2px solid var(--logo-color);
   border: none;
+  cursor: pointer;
 }
 
 .save-layout .catalog {
@@ -84,6 +85,7 @@
   border-bottom: 1px solid rgb(220, 220, 220);
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 
@@ -97,6 +99,8 @@
 
 .save-layout .catalog .item img {
   height: 200px;
+  width: 200px;
+  margin: auto;
 }
 
 .save-layout .catalog .item h1 {
@@ -124,16 +128,13 @@
   background-color: var(--logo-color);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .save-layout .item button:hover {
   opacity: 0.8;
 }
 
-.save-layout .categories select:hover,
-.save-layout .item button:hover {
-  cursor: pointer;
-}
 
 @media screen and (max-width: 1000px) {
   .save-layout {

@@ -63,12 +63,12 @@
 	color: rgb(255, 255, 255);
 	background-color: var(--logo-color);
 	border: none;
+	cursor: pointer;
 }
 
 .signup-form button:hover,
 .signup-form button:active {
 	opacity: 0.8;
-	cursor: pointer;
 }
 
 

@@ -31,6 +31,7 @@ nav a {
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 nav a img {
@@ -65,6 +66,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 nav ul li:hover {
@@ -94,10 +96,7 @@ nav ul li p {
   display: none;
 }
 
-nav a:hover,
-nav ul li:hover,
-nav form button:hover,
-.dropdown:hover {
+nav form button {
   cursor: pointer;
 }
 
@@ -143,6 +142,7 @@ nav form button:hover,
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    cursor: pointer;
   }
 
   .dropdown:hover,

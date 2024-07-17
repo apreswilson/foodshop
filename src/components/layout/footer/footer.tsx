@@ -7,8 +7,36 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
+import { useState } from 'react';
 
 const Footer: React.FC = () => {
+
+  const [formSent, setFormSent] = useState("Send");
+
+  const handleMessageSent = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const getInput = new FormData(event.currentTarget);
+    const getEmail = getInput.get("Email") as string;
+    const getMessage = getInput.get("Message") as string;
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (emailRegex.test(getEmail) && getMessage.length !== 0) {
+      setFormSent("Sent Successfully")
+      setTimeout(() => {
+        setFormSent("Send")
+      }, 2000);
+    } else {
+      setFormSent("Error Sending")
+      setTimeout(() => {
+        setFormSent("Send")
+      }, 2000);
+    }
+
+    event.currentTarget.reset();
+  }
+
   return (
     <footer aria-label="Footer">
       <a aria-label="Store Icon Link To Home Page">
@@ -25,11 +53,11 @@ const Footer: React.FC = () => {
           <li aria-label="Join / Sign Up">Join</li>
         </ul>
       </div>
-      <form className="contact-form" aria-label="Contact Us">
+      <form className="contact-form" aria-label="Contact Us" onSubmit={handleMessageSent}>
         <p>CONTACT US</p>
-        <input type="text" name="Email Address" placeholder="Email Address"></input>
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+        <input type="text" name="Email" placeholder="Email Address"></input>
+        <textarea name="Message" placeholder="Message"></textarea>
+        <button type="submit">{formSent}</button>
       </form>
       <div className="social-links">
         <p>SOCIALS</p>
