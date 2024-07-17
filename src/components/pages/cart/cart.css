@@ -8,15 +8,29 @@
   display: grid;
 }
 
+.cart-layout .order-summary {
+  margin-bottom: 50px;
+}
+
 .cart-layout .order-details h1,
 .cart-layout .order-summary h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--logo-color);
   font-weight: normal;
 }
 
+.cart-layout .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-layout .top-row .empty-cart {
+  height: 43px;
+}
+
 .cart-layout .order-details .order-item {
-  height: 200px;
+  height: 150px;
   gap: 20px;
   padding: 40px 0;
   border-bottom: 1px solid rgb(180, 180, 180);
@@ -25,7 +39,7 @@
   display: flex;
 }
 
-.cart-layout .order-details .order-item:first-of-type {
+.cart-layout .order-details .order-item:nth-of-type(2) {
   border-top: 1px solid rgb(180, 180, 180);
 }
 
@@ -35,7 +49,7 @@
 }
 
 .cart-layout .order-details .order-item h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -55,6 +69,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .cart-layout .order-details .order-item .quantity p,
@@ -72,17 +87,19 @@
   border: none;
 }
 
-.cart-layout .order-details .order-item button {
+.cart-layout .order-details .order-item button,
+.cart-layout .top-row .empty-cart {
   padding: 10px;
   font-size: 1.25rem;
   width: 130px;
   border-radius: 10px;
-  background-color: var(--logo-color);
+  background-color: rgb(223, 52, 52);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
-.cart-layout .order-summary hr {
+.order-summary hr {
   height: 1px;
   margin: 0;
   background-color: rgb(180, 180, 180);
@@ -91,18 +108,18 @@
 
 .cart-layout .order-summary .summary-item {
   width: 100%;
-  font-size: 1.25rem;
   display: flex;
   justify-content: space-between;
+}
+
+.cart-layout .order-summary .summary-item p {
+  font-size: 1.25rem;
 }
 
 .cart-layout .order-summary .summary-item p:first-child {
   font-weight: 600;
 }
 
-.cart-layout .order-summary .total {
-  font-size: 1.5rem;
-}
 
 .cart-layout .order-summary button {
   padding: 25px;
@@ -112,11 +129,11 @@
   background-color: var(--logo-color);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .cart-layout button:hover {
   opacity: 0.8;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1100px) {
@@ -127,7 +144,8 @@
   .cart-layout .order-details .order-item {
     height: 600px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .cart-layout .order-details .order-item h2 {
@@ -141,7 +159,9 @@
     grid-template-columns: 100%;
   }
 
-  .cart-layout .order-summary {
-    margin-bottom: 50px;
+  .cart-layout .top-row {
+    flex-direction: column;
+    margin-bottom: 25px;
+    align-items: flex-start;
   }
 }

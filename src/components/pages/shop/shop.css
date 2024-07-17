@@ -69,6 +69,7 @@
   font-size: 1.5rem;
   outline: 2px solid var(--logo-color);
   border: none;
+  cursor: pointer;
 }
 
 .shop-layout .catalog {
@@ -97,6 +98,8 @@
 
 .shop-layout .catalog .item img {
   height: 200px;
+  width: 200px;
+  margin: auto;
 }
 
 .shop-layout .catalog .item h1 {
@@ -124,15 +127,11 @@
   background-color: var(--logo-color);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .shop-layout .item button:hover {
   opacity: 0.8;
-}
-
-.shop-layout .categories select:hover,
-.shop-layout .item button:hover {
-  cursor: pointer;
 }
 
 .shop-layout .catalog .no-stock p b {

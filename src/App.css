@@ -44,28 +44,38 @@
 .home-layout .catalog-preview .item,
 .home-layout .savings-preview .item {
   font-size: 20px;
-  padding: 20px 10px;
-  width: calc(100% - 20px);
-  align-items: center;
+  padding: 20px 20px;
+  width: calc(100% - 40px);
   flex-direction: column;
   display: flex;
+  cursor: pointer;
 }
 
 .home-layout .catalog-preview .item:hover,
 .home-layout .savings-preview .item:hover {
   background-color: rgba(55, 160, 0, 0.2);
-  cursor: pointer;
 }
 
 .home-layout .catalog-preview .item img,
 .home-layout .savings-preview .item img {
-  height: 100px;
+  height: 150px;
+  width: 150px;
+  margin: auto;
 }
 
 .home-layout .catalog-preview .item p,
 .home-layout .savings-preview .item p {
   width: 80%;
   text-align: left;
+}
+
+.home-layout .catalog-preview .item p:nth-child(2) {
+  font-weight: bold;
+}
+
+.home-layout .catalog-preview .item p b:nth-of-type(1),
+.home-layout .savings-preview .item p b:nth-of-type(1) {
+  color: var(--logo-color);
 }
 
 .home-layout .catalog-preview .item:first-child,
@@ -87,10 +97,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .home-layout .catalog-preview .link p,
 .home-layout .savings-preview .link p {
+  width: 100%;
   text-align: center;
 }
 
@@ -118,9 +130,15 @@
 
 .home-layout .signup .signup-link {
   gap: 15px;
+  transition: var(--default-CSS-transition-time);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer
+}
+
+.home-layout .signup .signup-link:hover {
+  gap: 25px;
 }
 
 .home-layout .signup .signup-link p,
@@ -134,6 +152,26 @@
   margin: 0;
   background-color: rgb(220, 220, 220);
   border: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+
+  .home-layout .catalog-preview,
+  .home-layout .savings-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-layout .catalog-preview .item:last-child {
+    grid-column: 1 / span 2;
+  }
+
+  .home-layout .catalog-preview .link {
+    border-radius: 0;
+  }
+
+  .home-layout .catalog-preview .item:nth-child(2n + 1) {
+    border-left: none;
+  }
 }
 
 @media screen and (max-width: 800px) {

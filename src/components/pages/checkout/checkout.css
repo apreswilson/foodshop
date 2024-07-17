@@ -4,6 +4,10 @@
   font-family: var(--default-font-family);
 }
 
+.checkout-layout .disclaimer {
+  color: red;
+  font-weight: bold;
+}
 
 .checkout-layout .checkout-form h1 {
   font-size: 3rem;
@@ -78,12 +82,16 @@
   background-color: var(--logo-color);
   border: none;
   color: white;
+  cursor: pointer;
+}
+
+.form-status {
+  font-size: 1.5rem;
 }
 
 .order-summary button:hover,
 .order-summary button:active {
   opacity: 0.8;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

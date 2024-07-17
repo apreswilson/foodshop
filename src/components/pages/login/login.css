@@ -77,6 +77,7 @@
   color: rgb(255, 255, 255);
   background-color: var(--logo-color);
   border: none;
+  cursor: pointer;
 }
 
 .login-layout .right-side {
@@ -128,6 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .login-layout .right-side .sign-up:hover {
@@ -137,14 +139,6 @@
 .login-layout .left-side .login-form button:hover,
 .login-layout .left-side .login-form button:active {
   opacity: 0.8;
-}
-
-
-.login-layout .left-side .login-form button:hover,
-.login-layout .left-side .login-form button:active,
-.login-layout .right-side .sign-up:hover,
-.login-layout .right-side .sign-up:active {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -167,6 +161,7 @@
 
   .login-layout .left-side .login-form button {
     width: calc(100% - 20px);
+    cursor: pointer;
   }
 
   .login-layout .right-side {

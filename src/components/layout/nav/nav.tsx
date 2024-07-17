@@ -7,16 +7,20 @@ import {
   faUser,
   faUserPlus
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { GroceryListContext } from "../../../context/cart";
 
 const Nav: React.FC = () => {
-
   const navigateToPage = useNavigate();
+
+  const { groceryList: shoppingCart } = useContext(GroceryListContext);
+
+  const getHighestKeyFromShoppingCart = Object.keys(shoppingCart).length;
+
   //States
   const [openPageNavigationMenu, setOpenPageNavigationMenu] = useState<boolean>(false);
 
-  //Handler Functions
   const navigationMenuHandler = () => {
     openPageNavigationMenu ? setOpenPageNavigationMenu(false) : setOpenPageNavigationMenu(true);
   }
@@ -39,7 +43,7 @@ const Nav: React.FC = () => {
         <li aria-label="Cart" onClick={() => navigateToPage("/cart")}>
           <FontAwesomeIcon icon={faShoppingCart} />
           <p>Cart</p>
-          <p className="items-in-cart">0</p>
+          <p className="items-in-cart">{getHighestKeyFromShoppingCart}</p>
         </li>
         <li aria-label="Login" onClick={() => navigateToPage("/login")}>
           <FontAwesomeIcon icon={faUser} />

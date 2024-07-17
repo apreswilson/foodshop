@@ -1,0 +1,834 @@
+{
+  "Dry-Grocery": [
+    {
+      "Name": "Cereal",
+      "Cost": 3.00,
+      "Stock": 15,
+      "url": "https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-cute-cereal-bowl-png-image_11532460.png"
+    },
+    {
+      "Name": "Pasta",
+      "Cost": 1.50,
+      "Stock": 50,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/297/786/original/spaghetti-with-tomato-sauce-and-basil-in-a-plate-isolated-on-white-transparent-background-ai-generate-png.png"
+    },
+    {
+      "Name": "Rice",
+      "Cost": 2.00,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/028/086/751/original/bowl-of-rice-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+    },
+    {
+      "Name": "Flour",
+      "Cost": 1.25,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/030/808/342/original/flour-spoon-no-background-png.png"
+    },
+    {
+      "Name": "Sugar",
+      "Cost": 1.75,
+      "Stock": 25,
+      "url": "https://lh6.googleusercontent.com/proxy/dCtvq9NG7zLViJBITIJCuR0MpdmVZNtfXy88Zhu9YJ84q3A6LqVIskyWLcMEwlRbHQBtig4gctfXS8lYgF5rRuuCbj3dr9rqOzYAy89gzSki"
+    },
+    {
+      "Name": "Salt",
+      "Cost": 0.90,
+      "Stock": 60,
+      "url": "https://pngimg.com/d/salt_PNG22363.png"
+    },
+    {
+      "Name": "Olive Oil",
+      "Cost": 5.00,
+      "Stock": 20,
+      "url": "https://pngimg.com/d/olive_oil_PNG9.png"
+    },
+    {
+      "Name": "Peanut Butter",
+      "Cost": 3.50,
+      "Stock": 15,
+      "url": "https://png.pngtree.com/png-vector/20230808/ourmid/pngtree-peanut-butter-clipart-peanut-butter-on-bread-by-jar-in-vector-png-image_6866567.png"
+    },
+    {
+      "Name": "Oatmeal",
+      "Cost": 2.50,
+      "Stock": 35,
+      "url": "https://pngimg.com/d/porridge_PNG51.png"
+    },
+    {
+      "Name": "Instant Noodles",
+      "Cost": 0.75,
+      "Stock": 80,
+      "url": "https://t4.ftcdn.net/jpg/05/71/74/65/360_F_571746539_dWV6Fm4N3qZWxyWqYZGGuCYJY5uhCevH.png"
+    },
+    {
+      "Name": "Crackers",
+      "Cost": 2.25,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/012/096/831/original/crackers-isolated-on-transparent-background-file-png.png"
+    },
+    {
+      "Name": "Canned Beans",
+      "Cost": 1.00,
+      "Stock": 55,
+      "url": "https://static.vecteezy.com/system/resources/previews/035/913/435/original/ai-generated-open-bean-cans-full-of-beans-isolated-on-transparent-background-ai-png.png"
+    },
+    {
+      "Name": "Canned Soup",
+      "Cost": 1.75,
+      "Stock": 45,
+      "url": "https://png.pngtree.com/png-vector/20220612/ourmid/pngtree-bean-soup-tin-can-icon-png-image_5030135.png"
+    },
+    {
+      "Name": "Tea",
+      "Cost": 3.00,
+      "Stock": 25,
+      "url": "https://static.vecteezy.com/system/resources/previews/009/308/189/original/hot-tea-cup-on-transparent-background-file-png.png"
+    },
+    {
+      "Name": "Pancake Mix",
+      "Cost": 2.75,
+      "Stock": 30,
+      "url": "https://www.bettycrocker.lat/en/wp-content/uploads/sites/3/2020/12/BCcaribbean-product-bisquick-original-pancake-and-baking-mix.png"
+    },
+    {
+      "Name": "Granola Bars",
+      "Cost": 3.25,
+      "Stock": 35,
+      "url": "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-healthy-granola-bar-muesli-or-cereal-bar-isolated-on-png-image_11923137.png"
+    },
+    {
+      "Name": "Dried Fruit",
+      "Cost": 4.00,
+      "Stock": 20,
+      "url": "https://www.pngall.com/wp-content/uploads/12/Dry-Fruit-Food-PNG-Pic.png"
+    },
+    {
+      "Name": "Canned Tuna",
+      "Cost": 1.50,
+      "Stock": 50,
+      "url": "https://png.pngtree.com/png-clipart/20230814/original/pngtree-tuna-in-aluminum-can-ingredient-fish-canned-food-vector-picture-image_10632375.png"
+    },
+    {
+      "Name": "Cornflakes",
+      "Cost": 2.80,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/032/325/440/original/corn-flakes-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+    },
+    {
+      "Name": "Baking Powder",
+      "Cost": 1.20,
+      "Stock": 25,
+      "url": "https://www.pngall.com/wp-content/uploads/10/Baking-Powder-Transparent.png"
+    },
+    {
+      "Name": "Pasta Sauce",
+      "Cost": 2.30,
+      "Stock": 30,
+      "url": "https://mutti-parma.com/app/uploads/sites/30/2021/11/64312--marinara-sauce.png"
+    },
+    {
+      "Name": "Couscous",
+      "Cost": 2.50,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/036/746/948/original/ai-generated-uncooked-dried-couscous-in-wooden-bowl-isolated-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Lentils",
+      "Cost": 1.60,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/021/333/376/original/red-lentils-isolated-on-a-transparent-background-png.png"
+    },
+    {
+      "Name": "Popcorn",
+      "Cost": 2.20,
+      "Stock": 45,
+      "url": "https://pngimg.com/d/popcorn_PNG21.png"
+    }
+  ],
+  "Produce": [
+    {
+      "Name": "Apple",
+      "Cost": 1.00,
+      "Stock": 42,
+      "url": "https://pngimg.com/d/apple_PNG12439.png"
+    },
+    {
+      "Name": "Banana",
+      "Cost": 0.50,
+      "Stock": 60,
+      "url": "https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png"
+    },
+    {
+      "Name": "Carrot",
+      "Cost": 0.75,
+      "Stock": 70,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/254/829/original/carrot-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+    },
+    {
+      "Name": "Tomato",
+      "Cost": 0.90,
+      "Stock": 55,
+      "url": "https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
+    },
+    {
+      "Name": "Potato",
+      "Cost": 0.60,
+      "Stock": 100,
+      "url": "https://static.vecteezy.com/system/resources/previews/022/702/160/original/one-young-potato-isolated-on-transparent-background-stock-photo-png.png"
+    },
+    {
+      "Name": "Spinach",
+      "Cost": 1.25,
+      "Stock": 45,
+      "url": "https://static.vecteezy.com/system/resources/previews/029/719/645/original/spinach-transparent-background-png.png"
+    },
+    {
+      "Name": "Lettuce",
+      "Cost": 1.00,
+      "Stock": 35,
+      "url": "https://www.pngall.com/wp-content/uploads/15/Lettuce-PNG-Images.png"
+    },
+    {
+      "Name": "Broccoli",
+      "Cost": 1.50,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/216/070/original/broccoli-broccoli-broccoli-transparent-background-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Cucumber",
+      "Cost": 0.85,
+      "Stock": 50,
+      "url": "https://pngimg.com/d/cucumber_PNG12602.png"
+    },
+    {
+      "Name": "Bell Pepper",
+      "Cost": 1.20,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/013/167/407/original/orange-bell-pepper-free-png.png"
+    },
+    {
+      "Name": "Grapes",
+      "Cost": 2.00,
+      "Stock": 25,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/125/716/original/grapes-isolated-on-transparent-background-grape-clip-art-generative-ai-png.png"
+    },
+    {
+      "Name": "Blueberry",
+      "Cost": 3.00,
+      "Stock": 20,
+      "url": "https://i.pinimg.com/originals/54/80/ec/5480ec102c8fa7e92ea61bd219a20494.png"
+    },
+    {
+      "Name": "Strawberry",
+      "Cost": 2.50,
+      "Stock": 30,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Strawberry_%28transparent_background%29.png"
+    },
+    {
+      "Name": "Onion",
+      "Cost": 0.70,
+      "Stock": 65,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/216/316/original/onion-onion-transparent-background-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Garlic",
+      "Cost": 0.40,
+      "Stock": 80,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/214/959/original/garlic-garlic-garlic-transparent-background-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Zucchini",
+      "Cost": 0.95,
+      "Stock": 55,
+      "url": "https://i.pinimg.com/originals/a4/66/f9/a466f93f11e121740f375cf25378f00d.png"
+    },
+    {
+      "Name": "Peach",
+      "Cost": 1.30,
+      "Stock": 40,
+      "url": "https://www.freeiconspng.com/thumbs/peaches-png/peaches-png-transparent-image-6.png"
+    },
+    {
+      "Name": "Mango",
+      "Cost": 1.75,
+      "Stock": 35,
+      "url": "https://static.vecteezy.com/system/resources/previews/029/200/087/original/mango-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Pineapple",
+      "Cost": 3.00,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/035/877/835/non_2x/ai-generated-fresh-pineapple-isolated-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Watermelon",
+      "Cost": 4.00,
+      "Stock": 15,
+      "url": "https://static.vecteezy.com/system/resources/previews/028/051/171/original/watermelon-an-watermelon-transparent-background-ai-generated-png.png"
+    },
+    {
+      "Name": "Avocado",
+      "Cost": 1.50,
+      "Stock": 45,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/232/249/original/avocado-fresh-avocado-slice-of-avocado-isolated-avocado-transparent-background-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Pickles",
+      "Cost": 2.00,
+      "Stock": 55,
+      "url": "https://www.pngall.com/wp-content/uploads/4/Pickle-PNG.png"
+    },
+    {
+      "Name": "Olives",
+      "Cost": 2.50,
+      "Stock": 50,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/572/361/original/olive-olive-olive-with-transparent-background-ai-generative-free-png.png"
+    }
+  ],
+  "Meat": [
+    {
+      "Name": "Chicken Breast",
+      "Cost": 4.50,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/012/011/574/original/fresh-chicken-breast-cut-out-transparent-background-png.png"
+    },
+    {
+      "Name": "Ground Beef",
+      "Cost": 5.00,
+      "Stock": 25,
+      "url": "https://png.pngtree.com/png-vector/20231003/ourmid/pngtree-ground-beef-meat-red-png-image_10138029.png"
+    },
+    {
+      "Name": "Pork Chops",
+      "Cost": 6.00,
+      "Stock": 15,
+      "url": "https://img.pikbest.com/png-images/20240514/grilled-pork-chop-highly-detailed-isolated-on-transparent-background-png-_10563238.png!sw800"
+    },
+    {
+      "Name": "Bacon",
+      "Cost": 3.75,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/025/222/207/original/bacon-slices-isolated-on-transparent-background-png.png"
+    },
+    {
+      "Name": "Sausage",
+      "Cost": 4.25,
+      "Stock": 18,
+      "url": "https://www.freeiconspng.com/uploads/sausage-png-transparent-images-0.png"
+    },
+    {
+      "Name": "Turkey Breast",
+      "Cost": 7.00,
+      "Stock": 10,
+      "url": "https://www.agrosuper.com/global/wp-content/uploads/2022/10/1030265.png"
+    },
+    {
+      "Name": "Lamb Chops",
+      "Cost": 8.50,
+      "Stock": 12,
+      "url": "https://static.vecteezy.com/system/resources/previews/036/162/056/original/lamb-chops-on-a-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Ham",
+      "Cost": 6.75,
+      "Stock": 14,
+      "url": "https://pngimg.com/d/ham_PNG57.png"
+    },
+    {
+      "Name": "Ribeye Steak",
+      "Cost": 10.00,
+      "Stock": 8,
+      "url": "https://www.flannerybeef.com/wp-content/uploads/Ribsteak_USDAPrime_DryAged-600x600.png"
+    }
+  ],
+  "Seafood": [
+    {
+      "Name": "Salmon Fillet",
+      "Cost": 9.00,
+      "Stock": 16,
+      "url": "https://static.vecteezy.com/system/resources/previews/021/515/879/original/sliced-raw-salmon-fillet-on-transparent-background-file-png.png"
+    },
+    {
+      "Name": "Shrimp",
+      "Cost": 12.00,
+      "Stock": 20,
+      "url": "https://pngimg.com/d/shrimps_PNG18274.png"
+    },
+    {
+      "Name": "Tuna Steak",
+      "Cost": 10.50,
+      "Stock": 12,
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/042/517/341/small_2x/ai-generated-raw-tuna-steak-deep-red-hue-firm-texture-captured-in-natural-light-food-and-culinary-png.png"
+    },
+    {
+      "Name": "Cod",
+      "Cost": 7.50,
+      "Stock": 18,
+      "url": "https://www.seacoreseafood.com/user_files/upload/images/2017/5278%20Fresh%20Cod%20no%20background%20web.png"
+    },
+    {
+      "Name": "Crab Legs",
+      "Cost": 15.00,
+      "Stock": 10,
+      "url": "https://png.pngtree.com/png-vector/20231115/ourmid/pngtree-steamed-crab-leg-cooked-food-png-image_10592468.png"
+    }
+  ],
+  "Drinks": [
+    {
+      "Name": "Orange Juice",
+      "Cost": 3.00,
+      "Stock": 25,
+      "url": "https://static.vecteezy.com/system/resources/previews/024/850/756/original/fresh-orange-juice-with-fruits-transparent-background-png.png"
+    },
+    {
+      "Name": "Apple Juice",
+      "Cost": 2.50,
+      "Stock": 30,
+      "url": "https://pngimg.com/d/juice_PNG7185.png"
+    },
+    {
+      "Name": "Cola",
+      "Cost": 1.25,
+      "Stock": 50,
+      "url": "https://www.freeiconspng.com/thumbs/coca-cola-png/bottle-coca-cola-png-transparent-2.png"
+    },
+    {
+      "Name": "Sparkling Water",
+      "Cost": 1.50,
+      "Stock": 40,
+      "url": "https://res.cloudinary.com/hksqkdlah/image/upload/SIL_S-Pellegrino_Sparkling-Natural-Mineral-Water_o5hrob.png"
+    },
+    {
+      "Name": "Lemonade",
+      "Cost": 2.00,
+      "Stock": 35,
+      "url": "https://i.pinimg.com/originals/5d/23/65/5d23652f2d457cc1c64314099a413af0.png"
+    },
+    {
+      "Name": "Iced Tea",
+      "Cost": 2.25,
+      "Stock": 28,
+      "url": "https://www.pngall.com/wp-content/uploads/13/Iced-Tea-PNG-Photo.png"
+    },
+    {
+      "Name": "Ginger Ale",
+      "Cost": 1.75,
+      "Stock": 32,
+      "url": "https://www.billsdist.com/images/products/CanadaDryGingerAle.png"
+    },
+    {
+      "Name": "Energy Drink",
+      "Cost": 2.50,
+      "Stock": 45,
+      "url": "https://pngfre.com/wp-content/uploads/monster-energy-drink-poster.png"
+    },
+    {
+      "Name": "Coffee",
+      "Cost": 5.50,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/030/808/505/original/coffee-cup-no-background-png.png"
+    },
+    {
+      "Name": "Green Tea",
+      "Cost": 3.00,
+      "Stock": 25,
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/024/108/075/small_2x/fresh-herbal-tea-cup-with-green-leaves-isolated-on-transparent-background-png.png"
+    },
+    {
+      "Name": "Hot Chocolate",
+      "Cost": 2.75,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/028/174/738/original/cup-of-hot-chocolate-with-cream-isolated-on-transparent-background-generative-ai-png.png"
+    },
+    {
+      "Name": "Milk",
+      "Cost": 1.75,
+      "Stock": 50,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/778/715/original/milk-in-a-glass-healthy-diet-transparent-background-png.png"
+    },
+    {
+      "Name": "Almond Milk",
+      "Cost": 3.50,
+      "Stock": 22,
+      "url": "https://png.pngtree.com/png-clipart/20231202/original/pngtree-almond-milk-transparent-background-png-image_13755304.png"
+    },
+    {
+      "Name": "Soy Milk",
+      "Cost": 3.25,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/037/276/715/original/ai-generated-a-glass-of-soy-milk-isolated-on-a-transparent-background-png.png"
+    },
+    {
+      "Name": "Coconut Water",
+      "Cost": 2.75,
+      "Stock": 18,
+      "url": "https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-fresh-coconut-water-drink-png-image_10130060.png"
+    },
+    {
+      "Name": "Root Beer",
+      "Cost": 1.50,
+      "Stock": 40,
+      "url": "https://1212928256.rsc.cdn77.org/content/images/thumbs/000/0006501_ph-mug-root-beer-no-caffeine_1000.png"
+    },
+    {
+      "Name": "Grape Juice",
+      "Cost": 2.75,
+      "Stock": 28,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/145/797/original/grapes-juice-drink-perfect-for-drink-catalog-ai-generated-png.png"
+    },
+    {
+      "Name": "Pineapple Juice",
+      "Cost": 3.00,
+      "Stock": 22,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/145/887/original/glass-of-pineapple-juice-perfect-for-drink-catalog-ai-generated-png.png"
+    },
+    {
+      "Name": "Tomato Juice",
+      "Cost": 2.50,
+      "Stock": 20,
+      "url": "https://purepng.com/public/uploads/large/purepng.com-tomato-juicefood-vegetables-tomato-juice-941524726997syl3c.png"
+    },
+    {
+      "Name": "Fruit Punch",
+      "Cost": 2.00,
+      "Stock": 30,
+      "url": "https://bevmo.com/cdn/shop/files/d5028acb-0fee-4eb7-892f-a009f7a2c9cb-background_removed_18dcfafd-80ab-4c80-b316-7722a543791d.png?v=1715373280&width=1445"
+    },
+    {
+      "Name": "Herbal Tea",
+      "Cost": 3.50,
+      "Stock": 25,
+      "url": "https://pngimg.com/d/tea_PNG16920.png"
+    },
+    {
+      "Name": "Matcha Latte",
+      "Cost": 4.00,
+      "Stock": 15,
+      "url": "https://static.vecteezy.com/system/resources/previews/033/157/065/original/hot-matcha-green-tea-latte-art-foam-isolated-on-transparent-background-ai-generated-png.png"
+    },
+    {
+      "Name": "Chai Tea",
+      "Cost": 3.75,
+      "Stock": 18,
+      "url": "https://png.pngtree.com/png-clipart/20221109/ourmid/pngtree-fresh-milk-tea-or-indian-kadak-chai-png-image_6432496.png"
+    },
+    {
+      "Name": "Black Coffee",
+      "Cost": 5.00,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/009/307/068/original/black-coffee-in-a-cup-on-transparent-background-file-png.png"
+    },
+    {
+      "Name": "Espresso",
+      "Cost": 6.00,
+      "Stock": 10,
+      "url": "https://static.vecteezy.com/system/resources/previews/023/438/448/non_2x/espresso-coffee-cutout-free-png.png"
+    },
+    {
+      "Name": "Latte",
+      "Cost": 4.50,
+      "Stock": 15,
+      "url": "https://static.vecteezy.com/system/resources/previews/010/789/868/original/coffee-latte-with-heart-pattern-close-up-transparent-background-png.png"
+    },
+    {
+      "Name": "Mocha",
+      "Cost": 4.75,
+      "Stock": 12,
+      "url": "https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-mocha-coffee-frappe-in-glass-png-image_10125630.png"
+    },
+    {
+      "Name": "Mineral Water",
+      "Cost": 1.50,
+      "Stock": 40,
+      "url": "https://pngimg.com/d/water_bottle_PNG98936.png"
+    }
+  ],
+  "Pharmacy": [
+    {
+      "Name": "Aspirin",
+      "Cost": 3.50,
+      "Stock": 30,
+      "url": "https://www.aspirin.ca/sites/g/files/vrxlpx30151/files/2021-06/Aspirin-Regular-extra-strength-100ct-carton.png"
+    },
+    {
+      "Name": "Bandages",
+      "Cost": 2.00,
+      "Stock": 40,
+      "url": "https://pngimg.com/uploads/bandage/bandage_PNG26.png"
+    },
+    {
+      "Name": "Cold Medicine",
+      "Cost": 5.00,
+      "Stock": 25,
+      "url": "https://png.pngtree.com/png-clipart/20210309/original/pngtree-a-small-pile-of-cold-medicine-png-image_5830972.jpg"
+    },
+    {
+      "Name": "Cough Drops",
+      "Cost": 1.75,
+      "Stock": 35,
+      "url": "https://png.pngtree.com/png-vector/20230908/ourmid/pngtree-cough-drops-isolated-irritation-png-image_9231444.png"
+    },
+    {
+      "Name": "Hand Sanitizer",
+      "Cost": 2.50,
+      "Stock": 30,
+      "url": "https://www.pngall.com/wp-content/uploads/5/Hand-Sanitizer-PNG-Free-Download.png"
+    },
+    {
+      "Name": "Allergy Medication",
+      "Cost": 6.00,
+      "Stock": 15,
+      "url": "https://www.allegra.com/dam/jcr:618a1215-f2a1-40f3-83ba-7a472ab4d81b/41251_ALG_24hr_30ct_Bottle_F848x878%20(1).png"
+    },
+    {
+      "Name": "Digestive Aid",
+      "Cost": 3.25,
+      "Stock": 28,
+      "url": "https://pngimg.com/d/pills_PNG16513.png"
+    },
+    {
+      "Name": "First Aid Kit",
+      "Cost": 15.00,
+      "Stock": 10,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/735/607/original/3d-red-first-aid-kit-bag-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Eye Drops",
+      "Cost": 4.00,
+      "Stock": 22,
+      "url": "https://static.vecteezy.com/system/resources/previews/032/328/059/non_2x/eye-drop-eye-drop-vector-on-transparent-background-png.png"
+    },
+    {
+      "Name": "Pain Relief Patch",
+      "Cost": 3.75,
+      "Stock": 18,
+      "url": "https://i0.wp.com/naturcel.com/wp-content/uploads/2023/10/1-PRP-Main-Product-Image-Front.png?fit=2000%2C2000&ssl=1"
+    },
+    {
+      "Name": "Thermometer",
+      "Cost": 8.50,
+      "Stock": 12,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgIgqQaTP-sjHZT9rAE2ZkV521qKHChUZygg&s"
+    },
+    {
+      "Name": "Multivitamins",
+      "Cost": 7.00,
+      "Stock": 16,
+      "url": "https://pngimg.com/d/vitamins_PNG61.png"
+    },
+    {
+      "Name": "Sunscreen",
+      "Cost": 10.00,
+      "Stock": 8,
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/019/786/915/small_2x/sunscreen-lotion-protects-skin-from-the-sun-during-summer-png.png"
+    },
+    {
+      "Name": "Dental Floss",
+      "Cost": 2.25,
+      "Stock": 20,
+      "url": "https://wildflowerdental.com/wp-content/uploads/2015/05/walkington-reach-floss.png"
+    },
+    {
+      "Name": "Mouthwash",
+      "Cost": 3.00,
+      "Stock": 18,
+      "url": "https://images.ctfassets.net/ikipq83d3rdu/6mVLuOjSBKtAXCvtkpvreV/303f0b42dc04d2d9fcdd0fa1ecce47e0/RESTORINGANTICAVITY1.png"
+    },
+    {
+      "Name": "Acne Treatment",
+      "Cost": 5.50,
+      "Stock": 14,
+      "url": "https://cdn.accentuate.io/7476435484825/1660151346136/SuperClear_Primary_CutOut_01-2.png?v=1668707240261"
+    },
+    {
+      "Name": "Hair Loss Treatment",
+      "Cost": 12.00,
+      "Stock": 6,
+      "url": "https://www.spoiledchild.com/media/catalog/product/cache/1f06555d4ab5fb27800c1c2f233040ad/i/3/i34_no_background.png"
+    },
+    {
+      "Name": "Sleep Aid",
+      "Cost": 6.75,
+      "Stock": 20,
+      "url": "https://openclipart.org/image/800px/335331"
+    },
+    {
+      "Name": "Antacid",
+      "Cost": 3.50,
+      "Stock": 25,
+      "url": "https://png.pngtree.com/png-clipart/20231005/original/pngtree-antacid-tablets-tablets-picture-image_13088374.png"
+    }
+  ],
+  "Bakery": [
+    {
+      "Name": "Bread Loaf",
+      "Cost": 2.50,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/009/308/984/original/a-row-of-loaf-of-bread-on-transparent-background-file-png.png"
+    },
+    {
+      "Name": "Baguette",
+      "Cost": 3.00,
+      "Stock": 25,
+      "url": "https://pngimg.com/d/baguette_PNG20.png"
+    },
+    {
+      "Name": "Croissant",
+      "Cost": 1.75,
+      "Stock": 40,
+      "url": "https://pngimg.com/d/croissant_PNG46660.png"
+    },
+    {
+      "Name": "Muffin",
+      "Cost": 2.00,
+      "Stock": 35,
+      "url": "https://pngimg.com/d/muffin_PNG75.png"
+    },
+    {
+      "Name": "Cupcake",
+      "Cost": 1.50,
+      "Stock": 50,
+      "url": "https://static.vecteezy.com/system/resources/previews/019/165/502/original/3d-pink-cupcake-transparent-background-png.png"
+    },
+    {
+      "Name": "Cookie",
+      "Cost": 1.25,
+      "Stock": 60,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/291/607/original/cookie-isolated-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Brownie",
+      "Cost": 2.25,
+      "Stock": 28,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/309/406/non_2x/brownie-with-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Danish Pastry",
+      "Cost": 2.75,
+      "Stock": 24,
+      "url": "https://static.vecteezy.com/system/resources/previews/010/171/118/original/cutout-danish-bread-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Cake Slice",
+      "Cost": 3.50,
+      "Stock": 20,
+      "url": "https://static.vecteezy.com/system/resources/previews/030/809/555/original/chocolate-cake-slice-delicious-sweet-no-background-png.png"
+    },
+    {
+      "Name": "Pie",
+      "Cost": 4.00,
+      "Stock": 18,
+      "url": "https://pngimg.com/d/pie_PNG10.png"
+    },
+    {
+      "Name": "Doughnut",
+      "Cost": 1.50,
+      "Stock": 45,
+      "url": "https://static.vecteezy.com/system/resources/previews/016/774/442/original/colourful-decorated-donuts-isolated-on-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Pretzel",
+      "Cost": 1.75,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/291/835/original/a-pretzel-on-a-transparent-background-free-png.png"
+    },
+    {
+      "Name": "Bagel",
+      "Cost": 1.50,
+      "Stock": 50,
+      "url": "https://pngimg.com/d/bagel_PNG7.png"
+    },
+    {
+      "Name": "Scone",
+      "Cost": 2.25,
+      "Stock": 30,
+      "url": "https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-delicious-scone-face-png-image_10130688.png"
+    },
+    {
+      "Name": "Brioche",
+      "Cost": 3.00,
+      "Stock": 25,
+      "url": "https://static.vecteezy.com/system/resources/previews/029/239/142/original/brioche-looks-delicious-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Cinnamon Roll",
+      "Cost": 2.50,
+      "Stock": 32,
+      "url": "https://png.pngtree.com/png-vector/20231106/ourmid/pngtree-cinnamon-roll-png-image_10384947.png"
+    },
+    {
+      "Name": "Eclair",
+      "Cost": 3.25,
+      "Stock": 22,
+      "url": "https://png.pngtree.com/png-vector/20230912/ourmid/pngtree-various-sweet-tasty-eclair-png-image_10023029.png"
+    },
+    {
+      "Name": "Fruit Tart",
+      "Cost": 4.50,
+      "Stock": 15,
+      "url": "https://static.vecteezy.com/system/resources/previews/027/032/699/original/tart-with-berries-isolated-png.png"
+    },
+    {
+      "Name": "Pound Cake",
+      "Cost": 3.75,
+      "Stock": 18,
+      "url": "https://png.pngtree.com/png-vector/20231123/ourmid/pngtree-delicious-pound-cake-on-transparent-background-png-image_10701964.png"
+    }
+  ],
+  "Deli": [
+    {
+      "Name": "Roast Beef",
+      "Cost": 9.00,
+      "Stock": 20,
+      "url": "https://png.pngtree.com/png-clipart/20230622/ourmid/pngtree-smoked-roast-beef-png-image_7125532.png"
+    },
+    {
+      "Name": "Salami",
+      "Cost": 5.75,
+      "Stock": 35,
+      "url": "https://static.vecteezy.com/system/resources/previews/026/852/898/original/fresh-salami-and-sausage-cut-out-isolated-transparent-background-png.png"
+    },
+    {
+      "Name": "Provolone Cheese",
+      "Cost": 4.50,
+      "Stock": 40,
+      "url": "https://png.pngtree.com/png-vector/20231004/ourmid/pngtree-italian-cheese-provolone-png-image_10068026.png"
+    },
+    {
+      "Name": "Cheddar Cheese",
+      "Cost": 5.00,
+      "Stock": 35,
+      "url": "https://png.pngtree.com/png-vector/20230929/ourmid/pngtree-cheddar-cheese-wax-png-image_10151278.png"
+    },
+    {
+      "Name": "Swiss Cheese",
+      "Cost": 4.75,
+      "Stock": 30,
+      "url": "https://static.vecteezy.com/system/resources/previews/025/065/178/non_2x/cheese-with-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Chicken Salad",
+      "Cost": 6.00,
+      "Stock": 25,
+      "url": "https://www.freeiconspng.com/thumbs/salad-png/grilled-chicken-salad-png-19.png"
+    },
+    {
+      "Name": "Tuna Salad",
+      "Cost": 5.50,
+      "Stock": 28,
+      "url": "https://freepngimg.com/save/36738-tuna-salad/1884x1285"
+    },
+    {
+      "Name": "Hummus",
+      "Cost": 3.50,
+      "Stock": 40,
+      "url": "https://static.vecteezy.com/system/resources/previews/025/269/637/original/hummus-with-ai-generated-free-png.png"
+    },
+    {
+      "Name": "Guacamole",
+      "Cost": 4.00,
+      "Stock": 35,
+      "url": "https://static.vecteezy.com/system/resources/previews/036/885/011/original/ai-generated-bowl-of-guacamole-on-transparent-background-image-png.png"
+    }
+  ]
+}

@@ -58,11 +58,13 @@ footer .links ul {
   grid-template-columns: 50% 50%;
   list-style-type: none;
   display: grid;
+
 }
 
 footer .links ul li {
   margin: 5px 0;
   font-size: 20px;
+  cursor: pointer;
 }
 
 footer .contact-form {
@@ -102,6 +104,7 @@ footer .contact-form button {
   background-color: var(--logo-color);
   color: rgb(255, 255, 255);
   border: none;
+  cursor: pointer;
 }
 
 footer .social-links {
@@ -125,6 +128,7 @@ footer .social-links ul li {
   color: rgb(255, 255, 255);
   background-color: var(--logo-color);
   text-align: center;
+  cursor: pointer;
 }
 
 footer .links p,
@@ -139,7 +143,6 @@ footer .social-links p {
 footer .links ul li:hover,
 footer .social-links ul li:hover,
 footer .contact-form button:hover {
-  cursor: pointer;
   opacity: 0.8;
 }
 
