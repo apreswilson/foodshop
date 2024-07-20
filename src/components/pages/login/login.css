@@ -22,8 +22,8 @@
 }
 
 .login-layout .left-side .login-form {
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  gap: 50px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -36,11 +36,9 @@
   text-align: center;
 }
 
-.login-layout .left-side .login-form svg {
-  color: var(--logo-color);
-}
-
 .login-layout .left-side .login-form .username,
+.user-details .username,
+.user-details .password,
 .login-layout .left-side .login-form .password {
   height: 40px;
   width: 65%;
@@ -54,13 +52,18 @@
 }
 
 .login-layout .left-side .login-form .username svg,
+.user-details .username svg,
+.user-details .password svg,
 .login-layout .left-side .login-form .password svg {
   height: 40px;
+  color: var(--logo-color);
   width: 40px;
 }
 
 
 .login-layout .left-side .login-form .username input,
+.user-details .username input,
+.user-details .password input,
 .login-layout .left-side .login-form .password input {
   width: calc(95% - 40px);
   height: 100%;
@@ -79,6 +82,13 @@
   border: none;
   cursor: pointer;
 }
+
+.login-layout .left-side .login-form .status {
+  width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 
 .login-layout .right-side {
   color: rgb(255, 255, 255);
@@ -137,9 +147,78 @@
 }
 
 .login-layout .left-side .login-form button:hover,
-.login-layout .left-side .login-form button:active {
+.login-layout .left-side .login-form button:active,
+.logged-in-layout .username-row button:hover,
+.logged-in-layout .password-row button:hover,
+.logged-in-layout button[type="submit"]:hover,
+.logged-in-layout .logout:hover {
   opacity: 0.8;
 }
+
+.logged-in-layout {
+  margin-top: 200px;
+  min-height: 100dvh;
+  font-family: var(--default-font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logged-in-layout .user-details {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logged-in-layout .user-details .logo img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.logged-in-layout .username-row,
+.logged-in-layout .password-row {
+  gap: 15px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+
+.logged-in-layout .username-row button,
+.logged-in-layout .password-row button {
+  width: 75px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: var(--logo-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logged-in-layout button[type="submit"] {
+  background-color: var(--logo-color);
+}
+
+.logged-in-layout .logout {
+  background-color: rgb(223, 52, 52);
+  margin-bottom: 5rem;
+}
+
+.logged-in-layout button[type="submit"],
+.logged-in-layout .logout {
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 15rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 900px) {
   .login-layout {
@@ -184,5 +263,16 @@
 
   .login-layout .right-side .icons {
     width: 60%;
+  }
+
+  .logged-in-layout .user-details {
+    height: 800px;
+    width: 100%;
+  }
+
+  .logged-in-layout .username-row,
+  .logged-in-layout .password-row {
+    flex-direction: column;
+    width: 100%;
   }
 }

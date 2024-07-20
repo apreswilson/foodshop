@@ -43,6 +43,10 @@
   border-top: 1px solid rgb(180, 180, 180);
 }
 
+.cart-layout .order-details .order-item span {
+  text-align: center;
+}
+
 .cart-layout .order-details .order-item img {
   height: 200px;
   width: 200px;

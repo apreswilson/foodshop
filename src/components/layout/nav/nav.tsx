@@ -25,37 +25,45 @@ const Nav: React.FC = () => {
     openPageNavigationMenu ? setOpenPageNavigationMenu(false) : setOpenPageNavigationMenu(true);
   }
 
+  const navigateToPageHandler = (url: string) => {
+    navigateToPage(url);
+
+    if (openPageNavigationMenu) {
+      setOpenPageNavigationMenu(false);
+    }
+  }
+
   return (
     <nav aria-label="Navigation Menu">
       <a aria-label="Store Icon Link To Home Page" onClick={() => navigateToPage("/")}>
-        <img src="/store-logo.svg" alt="Food Shop Logo"></img>
+        <img src="store-logo.svg" alt="Food Shop Logo"></img>
         <h1>Food Shop</h1>
       </a>
       <ul aria-label="Website Pages" className={openPageNavigationMenu ? "mobile-page-menu" : ""}>
-        <li aria-label="Shop" onClick={() => navigateToPage("/shop")}>
+        <li aria-label="Shop" onClick={() => navigateToPageHandler("/shop")}>
           <FontAwesomeIcon icon={faShop} />
           <p>Shop</p>
         </li>
-        <li aria-label="Savings" onClick={() => navigateToPage("/save")}>
+        <li aria-label="Savings" onClick={() => navigateToPageHandler("/save")}>
           <FontAwesomeIcon icon={faMoneyBills} />
           <p>Save</p>
         </li>
-        <li aria-label="Cart" onClick={() => navigateToPage("/cart")}>
+        <li aria-label="Cart" onClick={() => navigateToPageHandler("/cart")}>
           <FontAwesomeIcon icon={faShoppingCart} />
           <p>Cart</p>
           <p className="items-in-cart">{getHighestKeyFromShoppingCart}</p>
         </li>
-        <li aria-label="Login" onClick={() => navigateToPage("/login")}>
+        <li aria-label="Login" onClick={() => navigateToPageHandler("/login")}>
           <FontAwesomeIcon icon={faUser} />
           <p>Login</p>
         </li>
         {/*Potentially Removing this section from navbar and only making it accessible from login*/}
-        <li aria-label="Join / Sign Up" onClick={() => navigateToPage("/signup")}>
+        <li aria-label="Join / Sign Up" onClick={() => navigateToPageHandler("/signup")}>
           <FontAwesomeIcon icon={faUserPlus} />
           <p>Join</p>
         </li>
       </ul>
-      <div className={`dropdown ${openPageNavigationMenu ? "exit" : ""}`} aria-label="View Dropdown Menu" onClick={navigationMenuHandler} >
+      <div className={`dropdown ${openPageNavigationMenu ? "exit" : ""}`} onClick={navigationMenuHandler} >
         <div className={openPageNavigationMenu ? "bar1" : ""} aria-hidden="true"></div>
         <div className={openPageNavigationMenu ? "bar2" : ""} aria-hidden="true"></div>
         <div className={openPageNavigationMenu ? "bar3" : ""} aria-hidden="true"></div>

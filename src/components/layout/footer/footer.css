@@ -156,7 +156,7 @@ footer .contact-form button:hover {
 @media screen and (max-width: 600px) {
   footer {
     grid-template-columns: 1fr;
-    height: 900px;
+    height: 1100px;
   }
 
   footer .links,

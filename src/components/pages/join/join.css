@@ -5,7 +5,7 @@
 }
 
 .signup-form {
-	width: 40%;
+	width: 45%;
 	height: 700px;
 	display: flex;
 	flex-direction: column;
@@ -66,14 +66,30 @@
 	cursor: pointer;
 }
 
+.signup-form .status {
+	font-size: 1.5rem;
+}
+
 .signup-form button:hover,
 .signup-form button:active {
 	opacity: 0.8;
 }
 
-
 @media screen and (max-width: 1000px) {
 	.signup-layout .signup-form {
-		width: 60%;
+		width: 70%;
 	}
+}
+
+@media screen and (max-width: 600px) {
+	.signup-layout .signup-form {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.signup-layout .signup-form {
+		width: 100%;
+	}
+
 }
