@@ -56,6 +56,11 @@
   background-color: rgba(55, 160, 0, 0.2);
 }
 
+.home-layout .catalog-preview .item span,
+.home-layout .savings-preview .item span {
+  text-align: center;
+}
+
 .home-layout .catalog-preview .item img,
 .home-layout .savings-preview .item img {
   height: 150px;

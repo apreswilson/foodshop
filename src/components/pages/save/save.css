@@ -88,6 +88,10 @@
   cursor: pointer;
 }
 
+.save-layout .item span {
+  text-align: center;
+}
+
 
 .save-layout .item:not(:nth-child(3n + 1)) {
   border-left: 1px solid rgb(220, 220, 220);

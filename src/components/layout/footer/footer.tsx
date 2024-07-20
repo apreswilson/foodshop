@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
   return (
     <footer aria-label="Footer">
       <a aria-label="Store Icon Link To Home Page">
-        <img src="/store-logo.svg" alt="Food Shop Logo"></img>
+        <img src="store-logo.svg" alt="Food Shop Logo"></img>
         <p>Food Shop</p>
       </a>
       <div className="links" aria-label="Website Pages">

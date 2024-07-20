@@ -7,6 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import "./cart.css";
+import { AuthContext } from "../../../context/login";
 
 interface GroceryCartItem {
   name: string;
@@ -24,6 +25,7 @@ const Cart: React.FC = () => {
   const fullFoodInventory = useMemo(() => Object.values(foodInventory).flat(), []);
   const { groceryList, setGroceryList } = useContext(GroceryListContext);
   const { savingsList } = useContext(SavingsContext);
+  const { token } = useContext(AuthContext);
 
   const [currentGroceryList, setCurrentGroceryList] = useState<Array<GroceryCartItem>>([]);
   const [currentSavingList, setCurrentSavingList] = useState<Array<SavingCartItem>>([]);
@@ -31,18 +33,18 @@ const Cart: React.FC = () => {
   const [savingsTotal, setSavingsTotal] = useState(0);
   const [groceryListTotal, setGroceryListTotal] = useState(0);
 
-  useEffect(() => {
+  useMemo(() => {
     setCurrentGroceryList(Object.values(groceryList));
     setCurrentSavingList(Object.values(savingsList));
   }, [groceryList, savingsList]);
 
-  useEffect(() => {
+  useMemo(() => {
     setSavingsTotal(groceryListSubTotal - groceryListTotal)
   }, [groceryListTotal, groceryListSubTotal])
 
   useEffect(() => {
     const total = currentGroceryList.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    const savingsApplied = currentSavingList.reduce((sum, item) => {
+    let savingsApplied = currentSavingList.reduce((sum, item) => {
       const groceryItem = currentGroceryList.find(gItem => gItem.name === item.name) as GroceryCartItem;
       if (groceryItem && item.type === "Percentage") {
         return sum - ((groceryItem.price * item.amount) * groceryItem.quantity);
@@ -51,10 +53,13 @@ const Cart: React.FC = () => {
       }
 
     }, total);
+    if (token) {
+      savingsApplied -= total * 0.10
+    }
     setGroceryListSubTotal(total);
     setGroceryListTotal(savingsApplied);
 
-  }, [currentGroceryList, currentSavingList]);
+  }, [currentGroceryList, currentSavingList, token]);
 
   useEffect(() => {
     const pushToList: Array<SavingCartItem> = [];
@@ -119,7 +124,6 @@ const Cart: React.FC = () => {
     sessionStorage.removeItem("cart");
   }
 
-
   return (
     <main className="cart-layout" aria-label="Cart Page">
       <div className="order-details" aria-label="Order Details">
@@ -154,7 +158,7 @@ const Cart: React.FC = () => {
           </div>
         ))}
 
-        <h1>Savings</h1>
+        <h1>Savings{token ? ": Member" : ""}</h1>
         <hr></hr>
         {currentSavingList.map((item, index) => (
           <div className="summary-item" key={index}>
@@ -162,6 +166,10 @@ const Cart: React.FC = () => {
             <p>- {item.type === "Percentage" ? (item.amount * 100) + "%" : "$" + ((item.amount * 100) / 100).toFixed(2)}</p>
           </div>
         ))}
+        {token ?
+          <></>
+          :
+          <></>}
         <h1>Totals</h1>
         <hr></hr>
         <div className="summary-item">
@@ -178,7 +186,7 @@ const Cart: React.FC = () => {
         </div>
         <button onClick={() => navigateToPage("/checkout")}>Checkout</button>
       </div>
-    </main >
+    </main>
   )
 }
 

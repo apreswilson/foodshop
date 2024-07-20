@@ -1,8 +1,10 @@
 import Nav from "./nav/nav";
 import Footer from "./footer/footer";
+import axios from "axios";
 import { GroceryListContext } from "../../context/cart";
 import { SavingsContext } from "../../context/savings";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import { AuthContext } from "../../context/login";
 
 interface Layout {
   children: React.ReactElement
@@ -11,6 +13,7 @@ interface Layout {
 const PageLayout: React.FC<Layout> = ({ children }) => {
   const [groceryList, setGroceryList] = useState<object>({});
   const [savingsList, setSavingsList] = useState<object>({});
+  const [token, setToken_] = useState(sessionStorage.getItem("token"));
 
   //Get cart from sessionstorage
   useEffect(() => {
@@ -26,8 +29,31 @@ const PageLayout: React.FC<Layout> = ({ children }) => {
     setSavingsList(checkIfSavingsExist);
   }, [])
 
+  //Authentication
+  const setToken = (newToken: string) => {
+    setToken_(newToken);
+  }
+
+  useEffect(() => {
+    if (token) {
+      axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+      sessionStorage.setItem('token', token);
+    } else {
+      delete axios.defaults.headers.common["Authorization"];
+      sessionStorage.removeItem('token')
+    }
+  }, [token]);
+
+  const contextValue = useMemo(
+    () => ({
+      token,
+      setToken,
+    }),
+    [token]
+  );
+
   return (
-    <>
+    <AuthContext.Provider value={contextValue}>
       <GroceryListContext.Provider value={{ groceryList, setGroceryList: setGroceryList }}>
         <SavingsContext.Provider value={{ savingsList, setSavingsList }}>
           <Nav />
@@ -35,7 +61,7 @@ const PageLayout: React.FC<Layout> = ({ children }) => {
           <Footer />
         </SavingsContext.Provider>
       </GroceryListContext.Provider >
-    </>
+    </AuthContext.Provider>
   )
 }
 
