@@ -23,12 +23,11 @@ const App: React.FC = () => {
       <LazyLoadImage src={item.url} alt={item.Name} effect="blur" />
       <p>{item.Name}</p>
       <p>${(Math.round(item.Cost * 100) / 100).toFixed(2)}</p>
-      <p>Stock: <b>{item.Stock}</b></p>
     </div>
   ))
 
   const savePreviewDisplay = saveInventory["dry"].slice(0, 4).map((item: SavingItem, index: number) => (
-    <div className='item' key={index}>
+    <div className='item' key={index} onClick={() => navigateToPage("/save")}>
       <LazyLoadImage src={item.url} alt={item.Item} effect="blur" />
       <p><b>{item.Saving}</b></p>
       <p>Save: {item.Type === "Percentage" ? `${item.Amount}%` : `$${(Math.round(item.Amount * 100) / 100).toFixed(2)}`}</p>

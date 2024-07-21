@@ -121,7 +121,6 @@ const Shop: React.FC = () => {
               <LazyLoadImage src={item.url} alt={item.Name} effect="blur" />
               <p><b>{item.Name}</b></p>
               <p>Price: ${(Math.round(item.Cost * 100) / 100).toFixed(2)}</p>
-              <p>Stock: {item.Stock}</p>
               <button onClick={() => addItemToCart(item.Name, item.Cost, 1)}>Add To Cart</button>
             </div>
           ))
@@ -131,7 +130,6 @@ const Shop: React.FC = () => {
               <LazyLoadImage src={item.url} alt={item.Name} effect="blur" />
               <p><b>{item.Name}</b></p>
               <p>Price: ${(Math.round(item.Cost * 100) / 100).toFixed(2)}</p>
-              <p>Stock: {item.Stock}</p>
               <button onClick={() => addItemToCart(item.Name, item.Cost, 1)}>Add To Cart</button>
             </div>
           ))

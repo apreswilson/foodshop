@@ -199,13 +199,22 @@
   cursor: pointer;
 }
 
+.logged-in-layout .username-row button:disabled,
+.logged-in-layout .password-row button:disabled {
+  background-color: rgb(223, 52, 52);
+}
+
 .logged-in-layout button[type="submit"] {
   background-color: var(--logo-color);
 }
 
 .logged-in-layout .logout {
   background-color: rgb(223, 52, 52);
+}
+
+.logged-in-layout .status {
   margin-bottom: 5rem;
+  font-size: 1.25rem;
 }
 
 .logged-in-layout button[type="submit"],
