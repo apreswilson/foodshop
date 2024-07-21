@@ -9,7 +9,7 @@ import {
   faUser
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../context/login";
 
 import "./login.css"
@@ -27,6 +27,8 @@ const Login: React.FC = () => {
     credentials = JSON.parse(storedCredentials);
   }
 
+
+
   const [enableButton, setEnableButton] = useState({
     username: false,
     password: false
@@ -35,7 +37,16 @@ const Login: React.FC = () => {
   const [formStatus, setFormStatus] = useState("");
   const { token, setToken } = useContext(AuthContext)
 
+  useEffect(() => {
+    if (token) {
+      setFormStatus("");
+    }
+  }, [token])
+
   const placeHolderPassword = credentials.confirm?.replace(/./g, "*");
+
+  const usernameRegex = /^[A-Za-z]+ [A-Za-z]+$/;
+  const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
 
   const navigateToPage = useNavigate();
 
@@ -46,8 +57,6 @@ const Login: React.FC = () => {
     const username = getFormInput.get("username") as string | null;
     const password = getFormInput.get("password") as string | null;
 
-    const usernameRegex = /^[A-Za-z]+ [A-Za-z]+$/;
-    const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
 
     if (username && password) {
       if (password.length === 0 || username.length === 0) {
@@ -61,14 +70,16 @@ const Login: React.FC = () => {
       }
 
       if (password != credentials.confirm || !passwordRegex.test(password)) {
-        setFormStatus("Password Invalid");
+        setFormStatus("Incorrect or Invalid Password. Requirements: 8 or more characters, 1 special character, 1 capital letter");
         return;
       }
 
       setFormStatus("Successful Login");
+      setTimeout(() => {
+        setFormStatus("");
+      }, 1000);
       setToken("Login Confirmed");
     }
-
   }
 
   const updateInformation = (event: React.FormEvent<HTMLFormElement>) => {
@@ -78,14 +89,12 @@ const Login: React.FC = () => {
     const username = getFormInput.get("username") as string;
     const password = getFormInput.get("password") as string;
 
-    const usernameRegex = /^[A-Za-z]+ [A-Za-z]+$/;
-    const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
-
     const testUsername = usernameRegex.test(username);
     const testPassword = passwordRegex.test(password);
 
     const currentUsername = credentials.username;
     const currentPassword = credentials.confirm;
+
 
     if (testUsername && !password) {
       sessionStorage.setItem("credentials", JSON.stringify({ username, confirm: currentPassword }))
@@ -93,9 +102,23 @@ const Login: React.FC = () => {
       sessionStorage.setItem("credentials", JSON.stringify({ username: currentUsername, confirm: password }))
     } else if (testUsername && testPassword) {
       sessionStorage.setItem("credentials", JSON.stringify({ username, confirm: password }))
+    } else if (!testUsername && !password) {
+      setFormStatus("Invalid Username. Must be an official first and last name.")
+      return;
+    } else if (!username && !testPassword) {
+      setFormStatus("Invalid Password Format. Requirements: 8 or more characters, 1 special character, 1 capital letter")
+      return;
     }
 
+    setFormStatus("Successful Update");
+    setTimeout(() => {
+      setFormStatus("");
+    }, 3000);
+
+    setEnableButton({ username: false, password: false })
+
     event.currentTarget.reset();
+    navigateToPage("/login");
   }
 
   const updateButtonEnable = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -108,6 +131,7 @@ const Login: React.FC = () => {
     if (value === "password") {
       setEnableButton({ username: false, password: true })
     }
+
   }
 
   const logout = () => {
@@ -167,18 +191,20 @@ const Login: React.FC = () => {
                 <FontAwesomeIcon icon={faUser} />
                 <input type="text" name="username" disabled={!enableButton.username} placeholder={credentials.username as string}></input>
               </div>
-              <button onClick={updateButtonEnable} value={"username"}>Edit</button>
+              <button onClick={updateButtonEnable} disabled={enableButton.username} value={"username"}>Edit</button>
             </div>
             <div className="password-row">
               <div className="password">
                 <FontAwesomeIcon icon={faKey} />
                 <input type="password" name="password" disabled={!enableButton.password} placeholder={placeHolderPassword}></input>
               </div>
-              <button onClick={updateButtonEnable} value={"password"}>Edit</button>
+              <button onClick={updateButtonEnable} disabled={enableButton.password} value={"password"}>Edit</button>
             </div>
             <button type="submit">Confirm</button>
+
           </form>
           <button className="logout" onClick={logout}>Logout</button>
+          <p className="status">{formStatus}</p>
         </main>
       }
     </>

@@ -4,13 +4,14 @@ import {
 	faKey,
 	faCheckCircle
 } from "@fortawesome/free-solid-svg-icons";
-
+import { useNavigate } from "react-router-dom";
 import "./join.css";
 import { useState } from "react";
 
 const Join: React.FC = () => {
 
 	const [formStatus, setFormStatus] = useState("");
+	const navigateToPage = useNavigate();
 
 	const signUpHandler = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
@@ -25,17 +26,17 @@ const Join: React.FC = () => {
 		const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
 
 		if (!usernameRegex.test(username)) {
-			setFormStatus("Username must be first and last name")
+			setFormStatus("Username must be first and last name");
 			return;
 		}
 
 		if (password.length === 0) {
-			setFormStatus("Enter a password")
+			setFormStatus("Enter a password");
 			return;
 		}
 
 		if (confirm !== password) {
-			setFormStatus("Password and Confirm Password Don't Match")
+			setFormStatus("Password and Confirm Password Don't Match");
 			return;
 		}
 
@@ -46,7 +47,7 @@ const Join: React.FC = () => {
 
 		setFormStatus("Created Account Successfully")
 		sessionStorage.setItem("credentials", JSON.stringify({ username, confirm }))
-
+		navigateToPage("/");
 	}
 
 	return (

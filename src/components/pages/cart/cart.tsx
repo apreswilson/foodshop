@@ -54,7 +54,7 @@ const Cart: React.FC = () => {
 
     }, total);
     if (token) {
-      savingsApplied -= total * 0.10
+      savingsApplied = savingsApplied - (total * 0.10);
     }
     setGroceryListSubTotal(total);
     setGroceryListTotal(savingsApplied);
@@ -166,6 +166,15 @@ const Cart: React.FC = () => {
             <p>- {item.type === "Percentage" ? (item.amount * 100) + "%" : "$" + ((item.amount * 100) / 100).toFixed(2)}</p>
           </div>
         ))}
+        {token ?
+          <div className="summary-item">
+            <p>Member</p>
+            <p>-10%</p>
+          </div>
+          :
+          <></>
+        }
+
         {token ?
           <></>
           :

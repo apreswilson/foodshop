@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react";
 import "./checkout.css";
+import { useNavigate } from "react-router-dom";
 
 interface OrderDetails {
   grandtotal: number;
@@ -23,7 +24,7 @@ interface RegexObjectType {
 
 const Checkout: React.FC = () => {
   const orderDetails: OrderDetails = JSON.parse(sessionStorage.getItem("order-details") as string);
-
+  const navigateToPage = useNavigate();
   const [formStatus, setFormStatus] = useState("");
 
   const [formData, setFormData] = useState({
@@ -39,6 +40,7 @@ const Checkout: React.FC = () => {
     expire: "",
     cvv: ""
   });
+
 
   const [formErrors, setFormErrors] = useState({
     email: false,
@@ -84,7 +86,7 @@ const Checkout: React.FC = () => {
     }
   };
 
-  const handleCheckout = (event: React.FormEvent) => {
+  const handleCheckout = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (Object.values(formErrors).includes(false)) {
@@ -92,7 +94,21 @@ const Checkout: React.FC = () => {
     } else if (orderDetails.grandtotal === 0) {
       setFormStatus("Cannot complete a purchase of zero items.")
     } else {
-      setFormStatus("Success")
+      setFormStatus("Success");
+      setFormData({
+        email: "",
+        firstname: "",
+        lastname: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
+        cardholder: "",
+        cardnumber: "",
+        expire: "",
+        cvv: ""
+      })
+      navigateToPage("/");
     }
   };
 

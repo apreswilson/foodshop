@@ -6,12 +6,14 @@ import {
   faLinkedin,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-import "./footer.css";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import "./footer.css";
 
 const Footer: React.FC = () => {
 
   const [formSent, setFormSent] = useState("Send");
+  const navigateToPage = useNavigate();
 
   const handleMessageSent = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -46,11 +48,11 @@ const Footer: React.FC = () => {
       <div className="links" aria-label="Website Pages">
         <p>PAGES</p>
         <ul>
-          <li aria-label="Shop">Shop</li>
-          <li aria-label="Savings">Save</li>
-          <li aria-label="Cart">Cart</li>
-          <li aria-label="Login">Login</li>
-          <li aria-label="Join / Sign Up">Join</li>
+          <li aria-label="Shop" onClick={() => navigateToPage("/shop")}>Shop</li>
+          <li aria-label="Savings" onClick={() => navigateToPage("/save")}>Save</li>
+          <li aria-label="Cart" onClick={() => navigateToPage("/cart")}>Cart</li>
+          <li aria-label="Login" onClick={() => navigateToPage("/login")}>Login</li>
+          <li aria-label="Join / Sign Up" onClick={() => navigateToPage("/signup")}>Join</li>
         </ul>
       </div>
       <form className="contact-form" aria-label="Contact Us" onSubmit={handleMessageSent}>
