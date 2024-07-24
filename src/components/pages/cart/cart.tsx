@@ -30,7 +30,6 @@ const Cart: React.FC = () => {
   const [currentGroceryList, setCurrentGroceryList] = useState<Array<GroceryCartItem>>([]);
   const [currentSavingList, setCurrentSavingList] = useState<Array<SavingCartItem>>([]);
   const [groceryListSubTotal, setGroceryListSubTotal] = useState(0);
-  const [savingsTotal, setSavingsTotal] = useState(0);
   const [groceryListTotal, setGroceryListTotal] = useState(0);
 
   useMemo(() => {
@@ -38,9 +37,8 @@ const Cart: React.FC = () => {
     setCurrentSavingList(Object.values(savingsList));
   }, [groceryList, savingsList]);
 
-  useMemo(() => {
-    setSavingsTotal(groceryListSubTotal - groceryListTotal)
-  }, [groceryListTotal, groceryListSubTotal])
+	const savingsTotal = groceryListSubTotal - groceryListTotal;
+
 
   useEffect(() => {
     const total = currentGroceryList.reduce((sum, item) => sum + item.price * item.quantity, 0);
